@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Cuando tu código no funciona y no sabes por qué",
+        "url": "https://i.imgur.com/a1B2c3d.jpg",
+        "categoria": "programacion",
+        "tags": ["Bill Gates", "frustración"],
+        "id": "1"
+    },
+    {
+        "name": "La cara de tu jefe cuando te pide hacer horas extras",
+        "url": "https://i.imgur.com/d4E5f6g.jpg",
+        "categoria": "trabajo",
+        "tags": ["Michael Scott", "The Office"],
+        "id": "2"
+    },
+    {
+        "name": "Cuando estudias toda la noche para un examen y te preguntan algo que no estudiaste",
+        "url": "https://i.imgur.com/h7I8j9k.jpg",
+        "categoria": "estudios",
+        "tags": ["Homer Simpson", "desesperación"],
+        "id": "3"
+    },
+    {
+        "name": "Cuando encuentras la solución a un bug después de horas de intentar",
+        "url": "https://i.imgur.com/k1L2m3n.jpg",
+        "categoria": "programacion",
+        "tags": ["Neo", "Matrix"],
+        "id": "4"
+    },
+    {
+        "name": "Cuando te das cuenta que es lunes otra vez",
+        "url": "https://i.imgur.com/l9N8o5p.jpg",
+        "categoria": "trabajo",
+        "tags": ["Garfield", "odio a los lunes"],
+        "id": "5"
+    },
+    {
+        "name": "Cuando te estudias todo el capítulo y la pregunta es de la nota al pie",
+        "url": "https://i.imgur.com/q2R4t6j.jpg",
+        "categoria": "estudios",
+        "tags": ["SpongeBob", "rabia"],
+        "id": "6"
+    },
+    {
+        "name": "El código funciona, pero nadie sabe por qué",
+        "url": "https://i.imgur.com/n8P7r2m.jpg",
+        "categoria": "programacion",
+        "tags": ["Bob Esponja", "misterio"],
+        "id": "7"
+    },
+    {
+        "name": "Cuando estás en la reunión de trabajo y alguien hace una pregunta que extiende todo 30 minutos más",
+        "url": "https://i.imgur.com/u7I6v8x.jpg",
+        "categoria": "trabajo",
+        "tags": ["Stanley", "The Office"],
+        "id": "8"
+    },
+    {
+        "name": "Cuando tienes que estudiar para el examen pero no entiendes nada",
+        "url": "https://i.imgur.com/z1Y2x3w.jpg",
+        "categoria": "estudios",
+        "tags": ["Charlie Day", "It's Always Sunny in Philadelphia"],
+        "id": "9"
+    },
+    {
+        "name": "Cuando finalmente logras arreglar un bug crítico en producción",
+        "url": "https://i.imgur.com/x3Y9o2d.jpg",
+        "categoria": "programacion",
+        "tags": ["Tony Stark", "Iron Man"],
+        "id": "10"
+    }
+]
