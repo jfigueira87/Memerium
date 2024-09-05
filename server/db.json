@@ -1,4 +1,5 @@
-[
+{
+    "memes":[
     {
         "name": "Cuando tu código no funciona y no sabes por qué",
         "url": "https://i.imgur.com/a1B2c3d.jpg",
@@ -70,3 +71,4 @@
         "id": "10"
     }
 ]
+}
