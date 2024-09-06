@@ -18,4 +18,6 @@ export async function getAllMemes() {
 
 //Delete meme -- DELETE
 
+
+
 //Update meme -- PUT
