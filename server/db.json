@@ -1,74 +1,96 @@
 {
     "memes":[
-    {
-        "name": "Cuando tu código no funciona y no sabes por qué",
-        "url": "https://i.imgur.com/a1B2c3d.jpg",
-        "categoria": "programacion",
-        "tags": ["Bill Gates", "frustración"],
-        "id": "1"
-    },
-    {
-        "name": "La cara de tu jefe cuando te pide hacer horas extras",
-        "url": "https://i.imgur.com/d4E5f6g.jpg",
-        "categoria": "trabajo",
-        "tags": ["Michael Scott", "The Office"],
-        "id": "2"
-    },
-    {
-        "name": "Cuando estudias toda la noche para un examen y te preguntan algo que no estudiaste",
-        "url": "https://i.imgur.com/h7I8j9k.jpg",
-        "categoria": "estudios",
-        "tags": ["Homer Simpson", "desesperación"],
-        "id": "3"
-    },
-    {
-        "name": "Cuando encuentras la solución a un bug después de horas de intentar",
-        "url": "https://i.imgur.com/k1L2m3n.jpg",
-        "categoria": "programacion",
-        "tags": ["Neo", "Matrix"],
-        "id": "4"
-    },
-    {
-        "name": "Cuando te das cuenta que es lunes otra vez",
-        "url": "https://i.imgur.com/l9N8o5p.jpg",
-        "categoria": "trabajo",
-        "tags": ["Garfield", "odio a los lunes"],
-        "id": "5"
-    },
-    {
-        "name": "Cuando te estudias todo el capítulo y la pregunta es de la nota al pie",
-        "url": "https://i.imgur.com/q2R4t6j.jpg",
-        "categoria": "estudios",
-        "tags": ["SpongeBob", "rabia"],
-        "id": "6"
-    },
-    {
-        "name": "El código funciona, pero nadie sabe por qué",
-        "url": "https://i.imgur.com/n8P7r2m.jpg",
-        "categoria": "programacion",
-        "tags": ["Bob Esponja", "misterio"],
-        "id": "7"
-    },
-    {
-        "name": "Cuando estás en la reunión de trabajo y alguien hace una pregunta que extiende todo 30 minutos más",
-        "url": "https://i.imgur.com/u7I6v8x.jpg",
-        "categoria": "trabajo",
-        "tags": ["Stanley", "The Office"],
-        "id": "8"
-    },
-    {
-        "name": "Cuando tienes que estudiar para el examen pero no entiendes nada",
-        "url": "https://i.imgur.com/z1Y2x3w.jpg",
-        "categoria": "estudios",
-        "tags": ["Charlie Day", "It's Always Sunny in Philadelphia"],
-        "id": "9"
-    },
-    {
-        "name": "Cuando finalmente logras arreglar un bug crítico en producción",
-        "url": "https://i.imgur.com/x3Y9o2d.jpg",
-        "categoria": "programacion",
-        "tags": ["Tony Stark", "Iron Man"],
-        "id": "10"
-    }
+        {
+            "name": "Home Office",
+            "url": "https://pbs.twimg.com/media/EkeqWRTVMAUNLPy.jpg",
+            "category": "Trabajo",
+            "tags": ["Spider man", "Home office"],
+            "id": "1"
+        },
+        {
+            "name": "Madrugon universitario",
+            "url": "http://static.boredpanda.es/blog/wp-content/uploads/2017/09/memes-universidad-5-59cb92771f376__700.jpg",
+            "category": "Estudiantes",
+            "tags": ["Calamardo", "Student"],
+            "id": "2"
+        },
+        {
+            "name":"Pedro",
+            "url":"https://profefranhinojosa.salduu.com/p/meme-dia-especial-estudiante",
+            "categoria":"Estudiantes",
+            "tags":["Examen", "Monito", "Rojo"],
+            "id":"3"
+        },
+        {
+            "name":"Quienes somos y lo que queremos",
+            "url":"https://www.pinterest.com/pin/645774034057022624/",
+            "category":"Estudiantes",
+            "tags":["Vacaciones", "Muñequitos", "Ojos saltones"],
+            "id":"4"
+        },
+        {
+            "name":"Familia de Flork",
+            "url":"https://www.redbubble.com/es/i/poster/El-código-no-funciona-por-qué-funciona-el-código-por-qué-meme-de-programación-divertido-de-ProgrammingMeme/65384467.E40HW",
+            "category":"Programacion",
+            "tags":["Codigo", "Funciona", "No funciona"],
+            "id":"6"
+        },
+        {
+            "name":"Ahora si, ahora no",
+            "url":"https://es.123rf.com/photo_199357562_los-programadores-copian-y-pegan-código-en-lugar-de-codificar-problemas-de-la-industria-de-ti-meme.html",
+            "category":"Programacion",
+            "tags":["Copiar", "Pegar", "Codigo"],
+            "id":"7"
+        },
+        {
+            "name": "Rumbo al examen",
+            "url": "https://www.elorientadero.com/wp-content/uploads/2022/01/meme-3.jpg",
+            "category": "Estudiantes",
+            "tags": ["Titanic", "Home office"],
+            "id": "8"
+        },
+        {
+            "name":"Es la vida",
+            "url":"https://www.redbubble.com/es/i/vinilo-portatil/La-vida-de-los-programadores-Meme-divertido-de-programación-de-DvCreations/109327065.6EA4Y",
+            "category":"Programacion",
+            "tags":["Trabajo", "Casa", "Dormir"],
+            "id":"9"
+        },
+        {
+            "name": "JavaScript",
+            "url": "https://scontent-mad1-1.xx.fbcdn.net/v/t39.30808-6/378284451_661572799439410_7979838149093927442_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=DtidDkr_BR0Q7kNvgHbTBzo&_nc_ht=scontent-mad1-1.xx&_nc_gid=AkbXkyCs_9mFbo2zUlRkfg8&oh=00_AYB-IyvaJqH_04uw9eLIT7L_a200ix6294ZB56VkmeXD8w&oe=66E095D0",
+            "category": "Programacion",
+            "tags": ["Google"],
+            "id": "10"
+        },
+        {
+            "name":"Digame",
+            "url":"https://m.cuantocabron.com/otros/no-morir-de-hambre-me-apasiona",
+            "category":"Trabajo",
+            "tags":["No morir", "Pasión", "Hambre"],
+            "id":"11"
+        },
+        {
+            "name":"Scottish",
+            "url":"https://www.linkedin.com/posts/josemiguelgarciamuniz_viernes-de-meme-si-alguna-vez-has-criticado-activity-7222496275714195457-_TjX/?originalSubdomain=es",
+            "category":"Trabajo",
+            "tags":["Rrhh", "Publicacion", "Gato"],
+            "id":"12"
+        },
+        {
+            "name":"No lo quiere saber",
+            "url":"https://www.boredpanda.es/memes-trabajo-humor-10/",
+            "category":"Trabajo",
+            "tags":["Rrhh", "Chiste", "Escuchar"],
+            "id":"13"
+        },
+        {
+            "name":"Pensamiento de Homero Simpson",
+            "url":"https://ar.pinterest.com/pin/644155552946792330/",
+            "category":"Estudiantes",
+            "tags":["Clases", "Virtual", "Dias"],
+            "id":""
+        }
+
 ]
 }

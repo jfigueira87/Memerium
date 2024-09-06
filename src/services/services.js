@@ -10,14 +10,27 @@ export async function getAllMemes() {
   } catch (error) {
     console.error('Error en la solicitud:', error);
   }
-}
+};
 
 //Get one meme by ID -- GET
 
 //Create meme -- POST
+export async function createMeme() {
+  try {
+    const response = await axios.post(URL_API, bodyMeme)
+    return response.data
+  } catch{
 
+  }
+};
 //Delete meme -- DELETE
 
-
-
 //Update meme -- PUT
+export async function updateMeme(id) {
+  try {
+    const response = await axios.put(`${URL_API}/${id}`, bodyMeme)
+
+  } catch {
+
+  }
+};
