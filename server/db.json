@@ -3,14 +3,14 @@
         {
             "name": "Home Office",
             "url": "https://pbs.twimg.com/media/EkeqWRTVMAUNLPy.jpg",
-            "categoria": "Trabajo",
+            "category": "Trabajo",
             "tags": ["Spider man", "Home office"],
             "id": "1"
         },
         {
             "name": "Madrugon universitario",
             "url": "http://static.boredpanda.es/blog/wp-content/uploads/2017/09/memes-universidad-5-59cb92771f376__700.jpg",
-            "categoria": "Estudiantes",
+            "category": "Estudiantes",
             "tags": ["Calamardo", "Student"],
             "id": "2"
         },
@@ -24,70 +24,70 @@
         {
             "name":"Quienes somos y lo que queremos",
             "url":"https://www.pinterest.com/pin/645774034057022624/",
-            "categoria":"Estudiantes",
+            "category":"Estudiantes",
             "tags":["Vacaciones", "Muñequitos", "Ojos saltones"],
             "id":"4"
         },
         {
             "name":"Familia de Flork",
             "url":"https://www.redbubble.com/es/i/poster/El-código-no-funciona-por-qué-funciona-el-código-por-qué-meme-de-programación-divertido-de-ProgrammingMeme/65384467.E40HW",
-            "categoria":"Programacion",
+            "category":"Programacion",
             "tags":["Codigo", "Funciona", "No funciona"],
             "id":"6"
         },
         {
             "name":"Ahora si, ahora no",
             "url":"https://es.123rf.com/photo_199357562_los-programadores-copian-y-pegan-código-en-lugar-de-codificar-problemas-de-la-industria-de-ti-meme.html",
-            "categoria":"Programacion",
+            "category":"Programacion",
             "tags":["Copiar", "Pegar", "Codigo"],
             "id":"7"
         },
         {
             "name": "Rumbo al examen",
             "url": "https://www.elorientadero.com/wp-content/uploads/2022/01/meme-3.jpg",
-            "categoria": "Estudiantes",
+            "category": "Estudiantes",
             "tags": ["Titanic", "Home office"],
             "id": "8"
         },
         {
             "name":"Es la vida",
             "url":"https://www.redbubble.com/es/i/vinilo-portatil/La-vida-de-los-programadores-Meme-divertido-de-programación-de-DvCreations/109327065.6EA4Y",
-            "categoria":"Programacion",
+            "category":"Programacion",
             "tags":["Trabajo", "Casa", "Dormir"],
             "id":"9"
         },
         {
             "name": "JavaScript",
             "url": "https://scontent-mad1-1.xx.fbcdn.net/v/t39.30808-6/378284451_661572799439410_7979838149093927442_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=DtidDkr_BR0Q7kNvgHbTBzo&_nc_ht=scontent-mad1-1.xx&_nc_gid=AkbXkyCs_9mFbo2zUlRkfg8&oh=00_AYB-IyvaJqH_04uw9eLIT7L_a200ix6294ZB56VkmeXD8w&oe=66E095D0",
-            "categoria": "Programacion",
+            "category": "Programacion",
             "tags": ["Google"],
             "id": "10"
         },
         {
             "name":"Digame",
             "url":"https://m.cuantocabron.com/otros/no-morir-de-hambre-me-apasiona",
-            "categoria":"Trabajo",
+            "category":"Trabajo",
             "tags":["No morir", "Pasión", "Hambre"],
             "id":"11"
         },
         {
             "name":"Scottish",
             "url":"https://www.linkedin.com/posts/josemiguelgarciamuniz_viernes-de-meme-si-alguna-vez-has-criticado-activity-7222496275714195457-_TjX/?originalSubdomain=es",
-            "categoria":"Trabajo",
+            "category":"Trabajo",
             "tags":["Rrhh", "Publicacion", "Gato"],
             "id":"12"
         },
         {
             "name":"No lo quiere saber",
             "url":"https://www.boredpanda.es/memes-trabajo-humor-10/",
-            "categoria":"Trabajo",
+            "category":"Trabajo",
             "tags":["Rrhh", "Chiste", "Escuchar"],
             "id":"13"
         },
         {
             "name":"Pensamiento de Homero Simpson",
             "url":"https://ar.pinterest.com/pin/644155552946792330/",
-            "categoria":"Estudiantes",
+            "category":"Estudiantes",
             "tags":["Clases", "Virtual", "Dias"],
             "id":""
         }
