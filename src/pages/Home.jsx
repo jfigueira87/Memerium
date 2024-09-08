@@ -1,5 +1,6 @@
-import { getAllMemes } from "../services/services"
+import { getAllMemes, deleteMeme } from "../services/services"
 import { useEffect, useState } from "react"
+
 
 //Sintaxis del usestate --->  const [count, setCount] = useState(0);
 
@@ -25,8 +26,6 @@ return(
   </>
 ) 
 }
-  
-
 
 // useEffect(() => {
 //   async function fetchData() {
@@ -36,6 +35,26 @@ return(
 //   }
 //   fetchData();
 // }, [someId]); // Or [] if effect doesn't need props or state
+
+//Manejar delete meme
+const handleDelete = async (id) => {
+  const response = await deleteMeme(id);
+  //console.log(response);
+  setMemes (memes.filter(meme => meme.id !== id));
+};
+return (
+  <div>
+    <h1>Lista de Memes</h1>
+    <ul>
+      {memes.map((meme) => (
+        <li key={meme.id}>
+          <p>{meme.name}</p>
+          <button onClick={() => handleDelete(meme.id)}>Eliminar</button>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
 
 export default Home
 
