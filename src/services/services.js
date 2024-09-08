@@ -24,6 +24,15 @@ export async function createMeme(bodyMeme) {
   }
 };
 //Delete meme -- DELETE
+export async function deleteMeme(id) {
+  try {
+    const response = await axios.delete(`${URL_API}/${id}`);
+    console.log('deletedMeme', response.data);//verificar si se elimino
+    return response.data;
+  } catch (error) {
+    console.error('Error en la solicitud:', error); //mostrar el error
+  }
+};
 
 //Update meme -- PUT
 export async function updateMeme(id) {
