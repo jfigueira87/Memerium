@@ -19,7 +19,7 @@ const Home = () => {
     <>
       
       {memes.map((meme, index) => (
-        <Card url={meme.url}/>
+        <Card url={meme.url} id_meme={meme.id}/>
       ))}
     </>
   );
