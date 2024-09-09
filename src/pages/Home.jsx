@@ -1,52 +1,31 @@
-import { getAllMemes } from "../services/services"
-import { useEffect, useState } from "react"
-
-//Sintaxis del usestate --->  const [count, setCount] = useState(0);
-
-// useEffect(() => {
-// // Código del efecto: lo que queremos hacer (efecto secundario)
-// 		return () => {
-// // Código de limpieza: lo que queremos hacer al desmontar el componente o antes de ejecutar el efecto nuevamente
-// };
-// }, [dependencies]);
-
+import { getAllMemes } from "../services/services";
+import { useEffect, useState } from "react";
 
 const Home = () => {
-  const [meme, setMeme] = useState([]);
+  const [memes, setMemes] = useState([]);
 
-  useEffect(()=>{
-    const dataMemes = getAllMemes();
-    console.log(dataMemes)
-    setMeme(dataMemes)
-  },[]);
-}
+  const fetchData = async () => {
+    const dataMemes = await getAllMemes();
+    setMemes(dataMemes); // Aquí guardas los datos en el estado `memes`
+  };
 
-// useEffect(() => {
-//   async function fetchData() {
-//     // You can await here
-//     const response = await MyAPI.getData(someId);
-//     // ...
-//   }
-//   fetchData();
-// }, [someId]); // Or [] if effect doesn't need props or state
-return (
-  <div>
-    <h1>Home</h1>
-    <ul>
-      {meme.map((meme) => (
-        <li key={meme.id}>
-          <p> Nombre { meme.name} </p>
-          <p> Url: { meme.url} </p>
-          <p> Categoría: { meme.category } </p>
-          <p> Etiquetas: { meme.tags } </p>
-          <button onClic={() => handleDelete (meme.id)}> Eliminar </button>
-        </li>
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  return (
+    <>
+      {memes.map((meme, index) => (
+        <div key={index}>
+          <p>Nombre del meme: {meme.name}</p>
+          <p>Categoria: {meme.categoria}</p>
+          <img src={meme.url} alt={meme.name} />
+          <p>Tags: {meme.tags}</p>
+        </div>
       ))}
-    </ul>
-  </div>
-)
+    </>
+  );
+};
 
-
-
-export default Home
+export default Home;
 
