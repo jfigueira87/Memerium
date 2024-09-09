@@ -1,5 +1,6 @@
 import { getAllMemes } from "../services/services";
 import { useEffect, useState } from "react";
+import {DeleteBtn} from "../components/DeleteBtn";
 
 const Home = () => {
   const [memes, setMemes] = useState([]);
