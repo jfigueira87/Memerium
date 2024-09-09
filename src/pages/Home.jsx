@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <>
-      <Card/>
+      <Card url="https://res.cloudinary.com/dz53okn10/image/upload/v1725878180/Captura_de_pantalla_2024-09-09_123547_ufiara.png"/>
       {memes.map((meme, index) => (
         <div className="font-[Itim]" key={index}>
           <p >Nombre del meme: {meme.name}</p>
