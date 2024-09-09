@@ -1,6 +1,7 @@
 import { getAllMemes } from "../services/services";
 import { useEffect, useState } from "react";
 
+
 const Home = () => {
   const [memes, setMemes] = useState([]);
 
