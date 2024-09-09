@@ -11,7 +11,8 @@ const Home = () => {
     setMemes(dataMemes);
   };
 
-  useEffect(() => {
+
+    useEffect(() => {
     fetchData();
   }, []);
 
