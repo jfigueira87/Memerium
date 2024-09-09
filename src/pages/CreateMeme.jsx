@@ -1,7 +1,6 @@
 import React from 'react'
 import { createMeme } from '../services/services';
 import { uploadImage } from '../services/services';
-//import FormMeme from '../components/FormMeme';
 
 const CreateMeme = () => {
   return (

@@ -15,19 +15,9 @@ export async function getAllMemes() {
 
 //Get one meme by ID -- GET
 
-// async function uploadImage() {
 
 
-//   const response = await fetch("https://api.cloudinary.com/v1_1/dz53okn10/image/upload", {
-//     method: "POST",
-//     body: formData
-//   });
-//   const result = await response.json();
-//   console.log("UPLOAD IMAGE");
-//   fileInput.src = result.secure_url;
-//   console.log(fileInput);
-//   return;
-// }
+
 
 //Create meme -- POST
 export async function uploadImage() {
