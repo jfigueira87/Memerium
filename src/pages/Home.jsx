@@ -19,7 +19,7 @@ const Home = () => {
     const dataMemes = getAllMemes();
     console.log(dataMemes)
     setMeme(dataMemes)
-  },[]);
+  },[]); 
 return(
   <>
     <p>Nombre del meme: {meme.name}</p>
@@ -56,5 +56,4 @@ return (
   </div>
 );
 
-export default Home
-
+export default Home 
