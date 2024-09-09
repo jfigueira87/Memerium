@@ -15,7 +15,7 @@ export async function getAllMemes() {
 //Get one meme by ID -- GET
 
 //Create meme -- POST
-export async function createMeme(data) {
+export async function createMeme(bodyMeme) {
   try {
     const response = await axios.post(URL_API, bodyMeme)
     return response.data
