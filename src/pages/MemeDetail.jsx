@@ -1,4 +1,4 @@
-/*import React from 'react'
+import React from 'react'
 import { useLoaderData } from './react-router-dom'
 
 const MemeDetail = () => {
@@ -16,4 +16,4 @@ const MemeDetail = () => {
   );
 }
 
-export default MemeDetail*/
+export default MemeDetail
