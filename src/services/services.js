@@ -1,4 +1,4 @@
-//import axios from "axios";
+import axios from "axios";
 const URL_API = "http://localhost:3000/memes";
 
 //Get all memes -- GET

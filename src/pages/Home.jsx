@@ -1,48 +1,37 @@
 import { useEffect, useState } from "react";
-import { getAllMemes, deleteMeme } from "../services/services";
-import { Link } from 'react-router-dom';
+import axios from "axios";
 
 
-const Home = () => {
+  const Home = () => {
   const [memes, setMemes] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   const fetchData = async () => {
     const dataMemes = await getAllMemes();
     setMemes(dataMemes); // Aquí guardas los datos en el estado `memes`
-    setLoading(false);
   }
-};
+  };
 
   const handleDelete = async (id) => {
     await deleteMeme(id); // Eliminamos el meme del servidor
     setMemes(memes.filter(meme => meme.id !== id)); // Actualiza el estado eliminado
   }
 
-    useEffect(() => {
+  useEffect(() => {
     fetchData();
   }, []);
 
-    if (loading) {
-    return <p className="text-center text-lg"> Estamos cargando los memes...</p>;
-    }
-
-  return (
+    return (
     <>
       <div>
-        <h1> Memerium </h1>
-      <Link to="/add">Add Meme</Link>
-      <div className="memes">
+        <h1> Memerium - Lista de Memes </h1>
+      <ul>
         {memes.map(meme => (
-          <div key={meme.id} className="meme">
-            <img src={meme.url} alt={meme.name} />
-            <h2>{meme.name}</h2>
-            <Link to={`/edit/${meme.id}`}>Edit</Link>
+          <li key={meme.id} className="meme">
             <button onClick={() => deleteMeme(meme.id)}>Delete</button>
-          </div>
+          </li>
         ))}
+        </ul>
       </div>
-    </div>  
     </>
-  )
-export default Home
+    )
+  export default Home
