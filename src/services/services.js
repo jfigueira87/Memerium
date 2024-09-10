@@ -14,6 +14,15 @@ export async function getAllMemes() {
 
 //Get one meme by ID -- GET
 
+export async function getOneMeme(id) {
+  try {
+    const response = await axios.get(`${URL_API}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error en la solicitud:', error);
+  }
+};
+
 //Create meme -- POST
 export async function createMeme(bodyMeme) {
   try {
