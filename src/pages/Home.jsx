@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import{ deleteMeme } from "../services"
+import { getAllMemes } from "axios";
 
 
   const Home = () => {
@@ -21,7 +23,7 @@ import axios from "axios";
   }, []);
 
     return (
-    <>
+    
       <div>
         <h1> Memerium - Lista de Memes </h1>
       <ul>
@@ -32,6 +34,6 @@ import axios from "axios";
         ))}
         </ul>
       </div>
-    </>
+    
     )
   export default Home

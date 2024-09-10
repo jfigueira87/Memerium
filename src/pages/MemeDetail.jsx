@@ -1,7 +1,12 @@
-import { useLoaderData } from './react-router-dom'
+import { useLoaderData, Link } from './react-router-dom';
+import { getOneMeme } from '../services';
 
+export const memeLoader = async ({ params }) => {
+  const meme = await getOneMeme(params.id);
+  return { meme };
+};
 const MemeDetail = () => {
-  const meme = useLoaderData(); //detalles del meme desde el router
+  const { meme } = useLoaderData();
 
   return (
     <div>
@@ -9,7 +14,7 @@ const MemeDetail = () => {
       <p>Nombre: {meme.name}</p>
       <p>Categoría: {meme.category}</p>
       <p>Url: {meme.url}</p>
-      <p>Etiquetas: {meme.tags.join(',')}</p>
+      <p>Etiquetas: {meme.tags.join(',')}</p> /* porque hay mas de 1 tag*/
       <p>Id del meme: {meme.id}</p>
     </div>
   );
