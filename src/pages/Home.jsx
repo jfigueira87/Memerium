@@ -1,4 +1,3 @@
-import { getAllMemes } from "../services/services";
 import { useEffect, useState } from "react";
 import Card from "../components/Card";
 
@@ -11,6 +10,10 @@ const Home = () => {
     setMemes(dataMemes);
   };
 
+  const handleDelete = async (id) => {
+    await deleteMeme(id); // Eliminamos el meme del servidor
+    setMemes(memes.filter(meme => meme.id !== id)); // Actualiza el estado eliminado
+  }
 
     useEffect(() => {
     fetchData();
