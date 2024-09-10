@@ -3,6 +3,10 @@ import { useParams } from 'react-router-dom';
 import { getOneMeme } from '../services/services';
 
 
+export const memeLoader = async ({ params }) => {
+  const meme = await getOneMeme(params.id);
+  return { meme };
+};
 const MemeDetail = () => {
   const { id } = useParams(); // Funcion del router dom para obtener el Id de la URL
   const [memeData, setMemeData] = useState(null); // Estado para almacenar los datos del meme
