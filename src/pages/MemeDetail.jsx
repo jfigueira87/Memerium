@@ -11,7 +11,7 @@ const MemeDetail = () => {
   return (
     <div>
       <h1>Aquí puedes ver el detalle del meme</h1>
-      <p>Nombre: {meme.name}</p>
+     <p>Nombre: {meme.name}</p>
       <p>Categoría: {meme.category}</p>
       <p>Url: {meme.url}</p>
       <p>Etiquetas: {meme.tags.join(',')}</p> /* porque hay mas de 1 tag*/
