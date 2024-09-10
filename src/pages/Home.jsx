@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "../components/Card";
 
-const Home = () => {
+  const Home = () => {
   const [memes, setMemes] = useState([]);
   const itemsPerPage = 3; // Número de memes por página
 
@@ -15,7 +15,7 @@ const Home = () => {
     setMemes(memes.filter(meme => meme.id !== id)); // Actualiza el estado eliminado
   }
 
-    useEffect(() => {
+  useEffect(() => {
     fetchData();
   }, []);
 
@@ -39,7 +39,7 @@ const Home = () => {
     setCurrentPage((prev) => (prev - 1 + pages.length) % pages.length);
   };
 
-  return (
+    return (
     <>
       <div className="relative" id="home">
         <img src="src/assets/images/home.png" alt="galeria de memes" className="w-full" />

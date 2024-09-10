@@ -1,4 +1,4 @@
-//import axios from "axios";
+import axios from "axios";
 const URL_API = "http://localhost:3000/memes";
 const URL_STORAGE = "https://api.cloudinary.com/v1_1/dz53okn10/image/upload"; //url del repositorio de imagenes CLOUDINARY
 
