@@ -1,5 +1,7 @@
 import { getAllMemes } from "../services/services";
 import { useEffect, useState } from "react";
+import Card from "../components/Card";
+
 
 const Home = () => {
   const [memes, setMemes] = useState([]);
@@ -15,13 +17,9 @@ const Home = () => {
 
   return (
     <>
+      
       {memes.map((meme, index) => (
-        <div key={index}>
-          <p>Nombre del meme: {meme.name}</p>
-          <p>Categoria: {meme.categoria}</p>
-          <img src={meme.url} alt={meme.name} />
-          <p>Tags: {meme.tags}</p>
-        </div>
+        <Card url={meme.url} id_meme={meme.id}/>
       ))}
     </>
   );
