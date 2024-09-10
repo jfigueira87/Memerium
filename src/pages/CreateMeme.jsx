@@ -1,13 +1,25 @@
-import React from 'react'
+import {useState} from 'react'
 import { createMeme } from '../services/services';
 import { uploadImage } from '../services/services';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const CreateMeme = () => {
   const {register, formState:{errors},handleSubmit} = useForm();
-  const onSubmit = (data) =>{
-    console.log(data)
+  const navigate = useNavigate();
+  const [urlImage,setUrlImage] = useState()
+
+  const urlGenerator = async (event) => {
+      const file = event.target.files[0]
+      const url_img = await uploadImage(file)
+      setUrlImage(url_img)
+  }
+
+  const onSubmit = (data) =>{    
+    createMeme({...data, url:urlImage.url})
+    navigate("/") 
   }
 
   return (
@@ -45,16 +57,16 @@ const CreateMeme = () => {
             </div>
           </div>
           <div>
-            <label htmlFor="photo" className="block text-sm font-medium leading-6 text-white">Subir imagen</label>
+            <label htmlFor="url" className="block text-sm font-medium leading-6 text-white">Subir imagen</label>
             <div class="mt-2">
-              <input id="photo" type="file" accept='image/*' {...register('photo',{
+              <input id="url" type="file" accept='image/*' {...register('url',{
                 required:'Es necesario subir una foto', 
                 validate:{checkFileType: (fileList) => {
                   return (
                     fileList && fileList[0]?.type.startsWith('image/')
                   ) || 'El archivo debe ser una imagen';
-              }}})}  onChange={uploadImage}/>
-              {errors.photo && <p>{errors.photo.message}</p>}
+              }}})} onChange={urlGenerator}/>
+              {errors.url && <p>{errors.url.message}</p>}
             </div>
           </div>
           <div>
