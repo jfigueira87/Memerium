@@ -15,7 +15,7 @@ import Card from "../components/Card";
     setMemes(memes.filter(meme => meme.id !== id)); // Actualiza el estado eliminado
   }
 
-  useEffect(() => {
+    useEffect(() => {
     fetchData();
   }, []);
 
