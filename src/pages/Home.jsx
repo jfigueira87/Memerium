@@ -17,8 +17,7 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      
+    <>      
       {memes.map((meme, index) => (
         <Card url={meme.url} id_meme={meme.id}/>
       ))}
