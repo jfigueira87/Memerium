@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
-import{ deleteMeme } from "../services/services";
-import { getAllMemes } from "../services/services";
-
+import{ deleteMeme, getAllMemes } from "../services/services";
 
   const Home = () => {
   const [memes, setMemes] = useState([]);
@@ -18,7 +15,7 @@ import { getAllMemes } from "../services/services";
   //useEffect ejecuta para que el componente funcione
 
     useEffect(() => {
-    fetchData();
+      fetchData();
   }, []);
 
   // Ahora DELETE

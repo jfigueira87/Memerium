@@ -23,7 +23,8 @@ export const router = createBrowserRouter([{
         },
         {
             path:'detailmeme',
-            element: <MemeDetail />
+            element: <MemeDetail />,
+            loader: memeLoader
         }
 ]
 }])
