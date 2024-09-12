@@ -9,7 +9,7 @@ const Layout = () => {
     <body className='font-mainFont'>
     <nav>Mi nav</nav>
           <Outlet /> 
-         <Footer/>
+    <Footer/>
     </body>
     </>
   )
