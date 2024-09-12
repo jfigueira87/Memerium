@@ -35,9 +35,18 @@
     "globals": "^15.9.0",
     "postcss": "^8.4.44",
     "tailwindcss": "^3.4.10",
+<<<<<<< HEAD
     "vite": "^5.4.3"
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
   }
+=======
+    "vite": "^5.4.1"
+  },
+"eslintConfig":{
+  "extends":"./node_modules/standard/eslintrc.json"
+ }
+>>>>>>> 7b6107e (Add: congif eslint)
 }
+
