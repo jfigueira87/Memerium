@@ -16,7 +16,7 @@ import Card from "../components/Card";
   }
 
     useEffect(() => {
-    fetchData();
+      fetchData();
   }, []);
 
   // Crear las páginas dividiendo los memes en grupos de 3

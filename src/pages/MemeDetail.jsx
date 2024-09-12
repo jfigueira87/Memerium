@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getOneMeme, deleteMeme } from '../services/services';
+import { getOneMeme } from '../services/services';
 
+//Hay que definir el loader y exportar
+export async function loader({ params }){
+  const data = await getOneMeme(params.id);
+  return { meme:data }
+}
 
 export const memeLoader = async ({ params }) => {
   const meme = await getOneMeme(params.id);
@@ -89,8 +94,10 @@ const MemeDetail = () => {
 
       </form>
       <div className="text-center mt-">
-        <Link to="/" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Volver a la Lista
+        <Link to="/" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">volver a la Lista
         </Link>
+        <button onClick={handleDelete} className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded ml-4">Eliminar
+        </button>   
       </div>
     </div>
   );
