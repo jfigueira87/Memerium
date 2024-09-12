@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import{ deleteMeme } from "../services/services.js";
-import { getAllMemes } from "../services/services.js";
+import{ deleteMeme } from "../services/services";
+import { getAllMemes } from "../services/services";
 
 
   const Home = () => {
