@@ -50,10 +50,10 @@ const CreateMeme = () => {
             </div>
           </div>
           <div>
-            <label htmlFor="keyword" className="block text-sm font-medium leading-6 text-white">Palabras clave</label>
+            <label htmlFor="tags" className="block text-sm font-medium leading-6 text-white">Palabras clave</label>
             <div className="mt-2">
-              <input type="text" {...register('keyword',{required:true})} className="block w-full rounded-md py-1.5 text-black bg-primarylight ring-1 ring-secondary"></input>
-              {errors.keyword?.type === 'required' && <p>Es necesario asignar una palabra clave</p>}
+              <input type="text" {...register('tags',{required:true})} className="block w-full rounded-md py-1.5 text-black bg-primarylight ring-1 ring-secondary"></input>
+              {errors.tags?.type === 'required' && <p>Es necesario asignar una palabra clave</p>}
             </div>
           </div>
           <div>

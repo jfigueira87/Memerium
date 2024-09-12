@@ -76,27 +76,6 @@
       "category": "estudiante",
       "tags": "virtual",
       "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725878180/Captura_de_pantalla_2024-09-09_123547_ufiara.png"
-    },
-    {
-      "id": "fe0e",
-      "name": "probnado3",
-      "category": "trabajo",
-      "keyword": "dsd",
-      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1725976133/luzCard_dryi6g.png"
-    },
-    {
-      "id": "36a4",
-      "name": "Jonnatha",
-      "category": "programacion",
-      "keyword": "hola",
-      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1725976227/ruta_oexcdj.jpg"
-    },
-    {
-      "id": "8468",
-      "name": "jhjxhjc",
-      "category": "programacion",
-      "keyword": "uhjhj",
-      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1725976333/ruta_q0uuhb.jpg"
-    }
+    }    
   ]
 }

@@ -6,11 +6,11 @@ import Footer from '../components/Footer'
 const Layout = () => {
   return (
     <>
-    <body className='font-mainFont'>
+    
     <nav>Mi nav</nav>
           <Outlet /> 
     <Footer/>
-    </body>
+    
     </>
   )
 }
