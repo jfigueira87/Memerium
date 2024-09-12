@@ -9,8 +9,8 @@ import { getAllMemes } from "../services/services.js";
 
   const fetchData = async () => {
     try{
-      const response = await getAllmemes ();
-      setMemes (response.data);
+      const data = await getAllMemes ();
+      setMemes (data);
    } catch (error) {
     console.error ("Error al obtener memes:", error);
    }
@@ -22,7 +22,7 @@ import { getAllMemes } from "../services/services.js";
   }, []);
 
   // Ahora DELETE
-  const deleteMeme = async (id) => {
+  const handleDelete = async (id) => {
     try{
       await deleteMeme(id); // Eliminamos el meme del servidor
       setMemes(memes.filter(meme => meme.id !== id)); // Actualiza el estado eliminado
@@ -38,7 +38,7 @@ import { getAllMemes } from "../services/services.js";
         {memes.map((meme) => (
           <li key={meme.id} className="bg-white shadow-md rounded-lg p-4 flex justify-between items-center">
             <span className="text-lg">{meme.name}</span> {}
-            <button onClick={() => deleteMeme(meme.id)} className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"> Eliminar </button>
+            <button onClick={() => handleDelete(meme.id)} className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"> Eliminar </button>
          </li>
         ))}
         </ul>
