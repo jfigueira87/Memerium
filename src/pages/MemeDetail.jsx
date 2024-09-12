@@ -9,7 +9,7 @@ const MemeDetail = () => {
   const [loading, setLoading] = useState(true); // Estado para mostrar si está cargando
 
   useEffect(() => {
-    
+
     const fetchMeme = async () => {
       try {
         const data = await getOneMeme(id);
@@ -54,7 +54,7 @@ const MemeDetail = () => {
             id="url"
             name="url"
             value={memeData.url}
-            />
+          />
         </div>
 
         <div>
@@ -64,7 +64,7 @@ const MemeDetail = () => {
             id="category"
             name="category"
             value={memeData.category}
-            />
+          />
         </div>
 
         <div>
@@ -73,11 +73,16 @@ const MemeDetail = () => {
             type="text"
             id="tags"
             name="tags"
-            value={memeData.tags.join(', ')} // Convertimos el array de tags en una cadena separada por comas ya que en nuestro db.json tenemos algunos memes con varias palabras claves
+            value={
+              Array.isArray(memeData.tags)
+                ? memeData.tags.join(', ')
+                : (memeData.tags) // En caso de que no sea un array, devuelve la unica palabra que tiene
+            }
+            readOnly
           />
         </div>
 
-        
+
       </form>
     </div>
   );
