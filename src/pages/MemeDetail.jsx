@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { getOneMeme } from '../services/services.js';
+import { useParams, Link } from 'react-router-dom';
+import { getOneMeme, deleteMeme } from '../services/services.js';
 
 
 export const memeLoader = async ({ params }) => {
@@ -88,6 +88,10 @@ const MemeDetail = () => {
 
 
       </form>
+      <div className="text-center mt-">
+        <Link to="/" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Volver a la Lista
+        </Link>
+      </div>
     </div>
   );
 };
