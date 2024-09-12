@@ -33,11 +33,11 @@ export async function deleteMeme(id) {
 };
 
 //Update meme -- PUT
-export async function updateMeme(id) {
+export async function updateMeme(id, bodyMeme) {
   try {
-    const response = await axios.put(`${URL_API}/${id}`, bodyMeme)
-
-  } catch {
-
+    const response = await axios.put(`${URL_API}/${id}`, bodyMeme);
+    return response.data;
+  } catch (error) {
+    console.error('Error en la solicitud:', error);
   }
-};
+}
