@@ -6,6 +6,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
+    <>
     <div>
         <p>Contacto:445465757</p>
         <p>Correo electronico:</p>
@@ -17,7 +18,7 @@ const Footer = () => {
 
         <p>©2024 por Memerium </p>
       </footer>
-    
+      </>
   )
 }
 
