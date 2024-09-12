@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getOneMeme } from '../services/services';
+import { getOneMeme } from '../services/services.js';
 
 
 export const memeLoader = async ({ params }) => {
