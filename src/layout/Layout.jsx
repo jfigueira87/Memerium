@@ -1,5 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import Footer from '../components/Footer'
+
 
 const Layout = () => {
   return (
@@ -7,7 +9,7 @@ const Layout = () => {
     <body style={{backgroundColor: "#1E4F64"}}>
     <nav>Mi nav</nav>
           <Outlet /> 
-    <footer>Mi footer</footer>
+         <Footer/>
     </body>
     </>
   )
