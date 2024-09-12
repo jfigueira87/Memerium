@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 const Layout = () => {
   return (
     <>
-    <body style={{backgroundColor: "#1E4F64"}}>
+    <body className='font-mainFont'>
     <nav>Mi nav</nav>
           <Outlet /> 
          <Footer/>

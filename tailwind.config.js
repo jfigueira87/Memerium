@@ -10,6 +10,9 @@ export default {
         primary: '#1E4F64',
         colorButton: '#D9D9D9',
         secondary: '#003340',
+      },
+      fontFamily:{
+        mainFont:['Delius', 'sans-serif']
       }
     },
   },
