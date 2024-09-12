@@ -1,11 +1,29 @@
-import React from 'react'
+import { getAllMemes } from "../services/services";
+import { useEffect, useState } from "react";
+import Card from "../components/Card";
+
 
 const Home = () => {
-  return (
-    <div>
-      <h1>Hola, Soy el Home. Bienvenido a MEMERIUM</h1>
-    </div>
-  )
-}
+  const [memes, setMemes] = useState([]);
 
-export default Home
+  const fetchData = async () => {
+    const dataMemes = await getAllMemes();
+    setMemes(dataMemes); // Aquí guardas los datos en el estado `memes`
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  return (
+    <>
+      
+      {memes.map((meme, index) => (
+        <Card url={meme.url} id_meme={meme.id}/>
+      ))}
+    </>
+  );
+};
+
+export default Home;
+
