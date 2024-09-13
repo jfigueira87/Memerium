@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import luzCard from '../assets/images/luzCard.png'
 // import marcoCard from '../assets/images/marcoCard.png'
 
-const GaleryCard = ({ url, id_meme }) => {
+const GalleryCard = ({ url, id_meme }) => {
   return (
     <div className='flex items-center justify-center flex-col py-5'>
       <div className='flex items-center justify-center'>
@@ -17,6 +17,6 @@ const GaleryCard = ({ url, id_meme }) => {
   );
 };
 
-export default GaleryCard;
+export default GalleryCard;
 
 
