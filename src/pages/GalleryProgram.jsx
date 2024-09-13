@@ -1,9 +1,9 @@
-import GaleryCard from "../components/GaleryCard";
+import GalleryCard from "../components/GalleryCard";
 import { getAllMemes } from "../services/services";
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 
-const GaleryWork = () => {
+const GalleryProgram = () => {
     const [memes, setMemes] = useState([]);
 
     const fetchData = async () => {
@@ -15,14 +15,14 @@ const GaleryWork = () => {
         fetchData();
     }, []);
 
-    const filterCondition = (meme) => meme.category === "trabajo";
+    const filterCondition = (meme) => meme.category === "programacion";
 
     const filteredMemes = memes.filter(filterCondition);
 
     return (
         <>
             <div className="m-2 text-center text-primary font-mainFont">
-                <h2 className="text-2xl font-extrabold">MEMES DE TRABAJO</h2>
+                <h2 className="text-2xl font-extrabold">MEMES DE PROGRAMACIÓN</h2>
             </div>
 
             <div className="relative overflow-hidden bg-[#1E4F64]" >
@@ -33,7 +33,7 @@ const GaleryWork = () => {
                 <div className="grid sm:grid-cols-1 lg:grid-cols-3 duration-700 ease-in-out h-full justify-items-center">
                     {filteredMemes.map((meme) => (
                         <div className="" key={meme.id}>
-                            <GaleryCard url={meme.url} id_meme={meme.id} />
+                            <GalleryCard url={meme.url} id_meme={meme.id} />
                         </div>
                     ))}
                 </div>
@@ -42,4 +42,4 @@ const GaleryWork = () => {
     );
 };
 
-export default GaleryWork;
+export default GalleryProgram;

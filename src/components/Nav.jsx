@@ -46,7 +46,7 @@ export default function Navbar() {
                                 className="absolute -translate-x-44 translate-y-6 right-0 z-10 w-50"
                             >
 
-                                <Link to={`/galery/:work`}>
+                                <Link to={`/gallerywork`}>
                                     <MenuItem>
                                         <a href="#" className="text-white bg-secondary block px-4 py-3 text-center">
                                             memes de trabajo
@@ -54,17 +54,23 @@ export default function Navbar() {
                                     </MenuItem>
                                 </Link>
 
-
+                                <Link to={`/galleryprogram`}>
                                 <MenuItem>
                                     <a href="#" className="text-primary bg-white block px-4 py-3 text-center">
                                         memes de programación
                                     </a>
                                 </MenuItem>
+                                </Link>
+
+                                <Link to={`/gallerystudent`}>
                                 <MenuItem>
                                     <a href="#" className="text-white bg-primary block px-4 py-3 text-center">
                                         memes de estudiante
                                     </a>
                                 </MenuItem>
+                                </Link>
+
+
                             </MenuItems>
                         </Menu>
                     </div>
