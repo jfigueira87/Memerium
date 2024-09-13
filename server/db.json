@@ -1,26 +1,6 @@
 {
   "memes": [
     {
-      "name": "Home Office",
-      "url": "https://pbs.twimg.com/media/EkeqWRTVMAUNLPy.jpg",
-      "category": "Trabajo",
-      "tags": [
-        "Spider man",
-        "Home office"
-      ],
-      "id": "1"
-    },
-    {
-      "name": "Madrugon universitario",
-      "url": "http://static.boredpanda.es/blog/wp-content/uploads/2017/09/memes-universidad-5-59cb92771f376__700.jpg",
-      "category": "Estudiantes",
-      "tags": [
-        "Calamardo",
-        "Student"
-      ],
-      "id": "2"
-    },
-    {
       "name": "Quienes somos y lo que queremos",
       "url": "https://www.pinterest.com/pin/645774034057022624/",
       "category": "Estudiantes",
