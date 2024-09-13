@@ -3,9 +3,9 @@ import { useParams, Link } from 'react-router-dom';
 import { getOneMeme } from '../services/services';
 
 //Hay que definir el loader y exportar
-export async function loader({ params }){
+export async function loader({ params }) {
   const data = await getOneMeme(params.id);
-  return { meme:data }
+  return { meme: data };
 }
 
 export const memeLoader = async ({ params }) => {
@@ -25,7 +25,7 @@ const MemeDetail = () => {
         setMemeData(data);
         setLoading(false); // Deja de mostrar el cargando
       } catch (error) {
-        console.error('Error al obtener los datos del meme:', error);
+        console.error("Error al obtener los datos del meme:", error);
         setLoading(false);
       }
     };
