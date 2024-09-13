@@ -1,111 +1,102 @@
 {
   "memes": [
     {
+      "id": "4f3e",
+      "name": "Home Office",
+      "category": "trabajo",
+      "tags": "Spider man",
+      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877207/SPIDER_zinq2v.jpg"
+    },
+    {
+      "id": "a939",
+      "name": "Madrugon universitario",
+      "category": "estudiante",
+      "tags": "Calamardo",
+      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877264/calamardo_x1x87v.jpg"
+    },
+    {
+      "id": "35c5",
+      "name": "Pedro",
+      "category": "estudiante",
+      "tags": "Examen",
+      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877347/pedro_eyalwc.webp"
+    },
+    {
+      "id": "c0a3",
       "name": "Quienes somos y lo que queremos",
-      "url": "https://www.pinterest.com/pin/645774034057022624/",
-      "category": "Estudiantes",
-      "tags": [
-        "Vacaciones",
-        "Muñequitos",
-        "Ojos saltones"
-      ],
-      "id": "4"
+      "category": "estudiante",
+      "tags": "vacaciones",
+      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877467/vacaciones_hcqe2i.jpg"
     },
     {
+      "id": "1ed9",
       "name": "Familia de Flork",
-      "url": "https://www.redbubble.com/es/i/poster/El-código-no-funciona-por-qué-funciona-el-código-por-qué-meme-de-programación-divertido-de-ProgrammingMeme/65384467.E40HW",
-      "category": "Programacion",
-      "tags": [
-        "Codigo",
-        "Funciona",
-        "No funciona"
-      ],
-      "id": "6"
+      "category": "programacion",
+      "tags": "Código",
+      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877566/Captura_de_pantalla_2024-09-09_122528_exifbf.png"
     },
     {
-      "name": "Ahora si, ahora no",
-      "url": "https://es.123rf.com/photo_199357562_los-programadores-copian-y-pegan-código-en-lugar-de-codificar-problemas-de-la-industria-de-ti-meme.html",
-      "category": "Programacion",
-      "tags": [
-        "Copiar",
-        "Pegar",
-        "Codigo"
-      ],
-      "id": "7"
-    },
-    {
+      "id": "65c9",
       "name": "Rumbo al examen",
-      "url": "https://www.elorientadero.com/wp-content/uploads/2022/01/meme-3.jpg",
-      "category": "Estudiantes",
-      "tags": [
-        "Titanic",
-        "Home office"
-      ],
-      "id": "8"
+      "category": "estudiante",
+      "tags": "titanic",
+      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877674/titanic_xj2mwd.jpg"
     },
     {
+      "id": "da98",
       "name": "Es la vida",
-      "url": "https://www.redbubble.com/es/i/vinilo-portatil/La-vida-de-los-programadores-Meme-divertido-de-programación-de-DvCreations/109327065.6EA4Y",
-      "category": "Programacion",
-      "tags": [
-        "Trabajo",
-        "Casa",
-        "Dormir"
-      ],
-      "id": "9"
+      "category": "programacion",
+      "tags": "trabajo",
+      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877825/codee_oct93k.jpg"
     },
     {
-      "name": "JavaScript",
-      "url": "https://scontent-mad1-1.xx.fbcdn.net/v/t39.30808-6/378284451_661572799439410_7979838149093927442_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=DtidDkr_BR0Q7kNvgHbTBzo&_nc_ht=scontent-mad1-1.xx&_nc_gid=AkbXkyCs_9mFbo2zUlRkfg8&oh=00_AYB-IyvaJqH_04uw9eLIT7L_a200ix6294ZB56VkmeXD8w&oe=66E095D0",
-      "category": "Programacion",
-      "tags": [
-        "Google"
-      ],
-      "id": "10"
+      "id": "f7ee",
+      "name": "JavaScrip",
+      "category": "programacion",
+      "tags": "google",
+      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877930/google_ouoalc.jpg"
     },
     {
+      "id": "3fdf",
       "name": "Digame",
-      "url": "https://m.cuantocabron.com/otros/no-morir-de-hambre-me-apasiona",
-      "category": "Trabajo",
-      "tags": [
-        "No morir",
-        "Pasión",
-        "Hambre"
-      ],
-      "id": "11"
+      "category": "trabajo",
+      "tags": "hambre",
+      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877949/digame_kixpzy.jpg"
     },
     {
+      "id": "4180",
       "name": "Scottish",
-      "url": "https://www.linkedin.com/posts/josemiguelgarciamuniz_viernes-de-meme-si-alguna-vez-has-criticado-activity-7222496275714195457-_TjX/?originalSubdomain=es",
-      "category": "Trabajo",
-      "tags": [
-        "Rrhh",
-        "Publicacion",
-        "Gato"
-      ],
-      "id": "12"
+      "category": "trabajo",
+      "tags": "rrhh",
+      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877970/scotish_k7dvgt.jpg"
     },
     {
-      "name": "No lo quiere saber",
-      "url": "https://www.boredpanda.es/memes-trabajo-humor-10/",
-      "category": "Trabajo",
-      "tags": [
-        "Rrhh",
-        "Chiste",
-        "Escuchar"
-      ],
-      "id": "13"
-    },
-    {
+      "id": "69b1",
       "name": "Pensamiento de Homero Simpson",
-      "url": "https://ar.pinterest.com/pin/644155552946792330/",
-      "category": "Estudiantes",
-      "tags": [
-        "Clases",
-        "Virtual",
-        "Dias"
-      ],
-      "id": ""
+      "category": "estudiante",
+      "tags": "virtual",
+      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725878180/Captura_de_pantalla_2024-09-09_123547_ufiara.png"
+    },
+    {
+      "id": "fe0e",
+      "name": "probnado3",
+      "category": "trabajo",
+      "keyword": "dsd",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1725976133/luzCard_dryi6g.png"
+    },
+    {
+      "id": "36a4",
+      "name": "Jonnatha",
+      "category": "programacion",
+      "keyword": "hola",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1725976227/ruta_oexcdj.jpg"
+    },
+    {
+      "id": "8468",
+      "name": "jhjxhjc",
+      "category": "programacion",
+      "keyword": "uhjhj",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1725976333/ruta_q0uuhb.jpg"
     }
   ]
 }
