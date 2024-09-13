@@ -1,13 +1,6 @@
 {
   "memes": [
     {
-      "id": "35c5",
-      "name": "Pedro",
-      "category": "estudiante",
-      "tags": "Examen",
-      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877347/pedro_eyalwc.webp"
-    },
-    {
       "id": "1ed9",
       "name": "Familia de Flork",
       "category": "programacion",
