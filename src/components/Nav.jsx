@@ -1,6 +1,7 @@
 //Navbar
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom';
 
 
 
@@ -33,7 +34,7 @@ export default function Navbar() {
                         {/* Profile dropdown */}
                         <Menu as="div" className="relative ml-3 lg:text-primary text-white flex text-sm md:ml-6 md:block md:bg-white ">
                             <div className="flex space-x-12">
-                                <a href="#">Inicio</a>
+                                <Link to={`/`}><a href="#">Inicio</a></Link>
                                 <MenuButton className="relative">
                                     <span>Galerias</span>
                                 </MenuButton>
@@ -44,11 +45,16 @@ export default function Navbar() {
                                 transition
                                 className="absolute -translate-x-44 translate-y-6 right-0 z-10 w-50"
                             >
-                                <MenuItem>
-                                    <a href="#" className="text-white bg-secondary block px-4 py-3 text-center">
-                                        memes de trabajo
-                                    </a>
-                                </MenuItem>
+
+                                <Link to={`/galery/:work`}>
+                                    <MenuItem>
+                                        <a href="#" className="text-white bg-secondary block px-4 py-3 text-center">
+                                            memes de trabajo
+                                        </a>
+                                    </MenuItem>
+                                </Link>
+
+
                                 <MenuItem>
                                     <a href="#" className="text-primary bg-white block px-4 py-3 text-center">
                                         memes de programación
