@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=New+Amsterdam&display=swap');
+/* index.css o tailwind.css */
+@import 'flowbite/dist/flowbite.min.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
