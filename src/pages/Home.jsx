@@ -37,13 +37,13 @@ const Home = () => {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative" id="home">
         <img src="src/assets/images/home.png" alt="galeria de memes" className="w-full" />
         <h2 className="text-white text-6xl absolute bottom-10 left-1/2 transform -translate-x-1/2">
           Donde los memes se hacen arte
         </h2>
       </div>
-      <div className="m-14 text-center">
+      <div className="m-14 text-center" id="aboutUs">
         <h2 className="text-3xl font-bold mb-5">Sobre nosotros</h2>
         <p>Memerium: Donde los Memes se Convierten en Arte</p>
         <p>Bienvenidos a Memerium, el primer museo digital dedicado exclusivamente al arte del meme. En un mundo donde el humor viral y la creatividad espontánea definen nuestra cultura, hemos creado un espacio donde los memes son más que simples imágenes: son obras de arte que cuentan historias, reflejan emociones y conectan a personas de todo el mundo.</p>
@@ -51,8 +51,7 @@ const Home = () => {
         <h3 className="text-2xl font-bold my-5">Únete a la Revolución del Humor</h3>
         <p>Ser parte de Memerium es mucho más que tener acceso a una galería de memes: es formar parte de una revolución cultural, donde el arte y el humor se entrelazan para crear algo nuevo. Cada día, millones de personas crean y comparten memes que dan vida a conversaciones, provocan sonrisas y generan reflexión. Aquí, en nuestro museo digital, esa chispa creativa nunca se apaga.</p>
       </div>
-
-      {/* Carrusel */}
+        {/* Carrusel */}
       <div className="relative overflow-hidden bg-[#1E4F64]">
         {/* Wrapper del Carrusel */}
         <div
