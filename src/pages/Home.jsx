@@ -44,10 +44,12 @@ const Home = () => {
         </h2>
       </div>
       <div className="m-14 text-center">
-        <h2 className="text-3xl font-bold">Sobre nosotros</h2>
-        <p>Memerium, la web de memes que son arte</p>
-        <p>Aquí puedes subir, editar y borrar memes para crear tu propia colección de humor ¡tú decides qué memes viven y cuáles desaparecen!. Ayuda al humor viral: ríete, crea y comparte.</p>
-        <p>Sé parte de Memerium donde cada meme tiene su lugar.</p>
+        <h2 className="text-3xl font-bold mb-5">Sobre nosotros</h2>
+        <p>Memerium: Donde los Memes se Convierten en Arte</p>
+        <p>Bienvenidos a Memerium, el primer museo digital dedicado exclusivamente al arte del meme. En un mundo donde el humor viral y la creatividad espontánea definen nuestra cultura, hemos creado un espacio donde los memes son más que simples imágenes: son obras de arte que cuentan historias, reflejan emociones y conectan a personas de todo el mundo.</p>
+        <p>Los memes son una forma de arte moderna, una herramienta que rompe barreras de idioma y cultura. En Memerium, creemos que el humor puede unir a las personas, y los memes son una manera poderosa de hacerlo. Desde memes clásicos que nunca pasan de moda hasta los más recientes que inundan internet, nuestra misión es celebrar esta nueva forma de comunicación que, en cuestión de segundos, puede hacer reír a millones.</p>
+        <h3 className="text-2xl font-bold my-5">Únete a la Revolución del Humor</h3>
+        <p>Ser parte de Memerium es mucho más que tener acceso a una galería de memes: es formar parte de una revolución cultural, donde el arte y el humor se entrelazan para crear algo nuevo. Cada día, millones de personas crean y comparten memes que dan vida a conversaciones, provocan sonrisas y generan reflexión. Aquí, en nuestro museo digital, esa chispa creativa nunca se apaga.</p>
       </div>
 
       {/* Carrusel */}

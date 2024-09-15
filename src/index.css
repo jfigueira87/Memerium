@@ -6,3 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+   font-family: "Delius", "sans-serif"; 
+}
