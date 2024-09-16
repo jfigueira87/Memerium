@@ -51,7 +51,7 @@ export default function Navbar() {
 
                                 <Link to={`/gallerywork`}>
                                     <MenuItem>
-                                        <a href="#" className="text-white bg-primary block px-4 py-3 text-center">
+                                        <a href="#" className="text-white bg-secondary block px-4 py-3 text-center">
                                             memes de trabajo
                                         </a>
                                     </MenuItem>
