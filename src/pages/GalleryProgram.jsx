@@ -1,4 +1,4 @@
-import GalleryCard from "../components/GalleryCard";
+import Card from "../components/Card";
 import { getAllMemes } from "../services/services";
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
@@ -33,7 +33,7 @@ const GalleryProgram = () => {
                 <div className="grid sm:grid-cols-1 lg:grid-cols-3 duration-700 ease-in-out h-full justify-items-center">
                     {filteredMemes.map((meme) => (
                         <div className="" key={meme.id}>
-                            <GalleryCard url={meme.url} id_meme={meme.id} />
+                            <Card url={meme.url} id_meme={meme.id} />
                         </div>
                     ))}
                 </div>
