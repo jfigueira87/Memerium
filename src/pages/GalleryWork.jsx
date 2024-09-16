@@ -21,11 +21,8 @@ const GalleryWork = () => {
 
     return (
         <>
-            <div className="m-2 text-center text-primary font-mainFont">
-                <h2 className="text-2xl font-extrabold">MEMES DE TRABAJO</h2>
-            </div>
-
             <div className="relative overflow-hidden bg-[#1E4F64]" >
+            <h2 className="text-2xl font-extrabold text-center text-white mt-10">MEMES DE TRABAJO</h2>
                 <div className="m-4 text-center text-black font-mainFont flex justify-center py-8">
                 <Link to={`/newmeme`}> <button type="button" className="rounded-md bg-gray-300 px-10 py-4 text-sm font-bold  text-primary shadow-sm">Agrega un meme</button></Link>
                 </div>
