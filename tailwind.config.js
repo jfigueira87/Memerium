@@ -5,7 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#1E4F64',
+        colorButton: '#D9D9D9',
+        secondary: '#003340',
+      },
+      fontFamily:{
+        mainFont:['Delius', 'sans-serif']
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin'), // Agrega Flowbite al array de plugins
+  ],
 }
