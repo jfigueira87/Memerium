@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react";
-import Card from "../components/Card";
 import { getAllMemes } from "../services/services";
 import { useEffect, useState } from "react";
 import Card from "../components/Card";
 
-  const Home = () => {
+const Home = () => {
   const [memes, setMemes] = useState([]);
   const itemsPerPage = 3; // Número de memes por página
 
@@ -13,13 +11,8 @@ import Card from "../components/Card";
     setMemes(dataMemes);
   };
 
-  const handleDelete = async (id) => {
-    await deleteMeme(id); // Eliminamos el meme del servidor
-    setMemes(memes.filter(meme => meme.id !== id)); // Actualiza el estado eliminado
-  }
-
-    useEffect(() => {
-      fetchData();
+  useEffect(() => {
+    fetchData();
   }, []);
 
   // Crear las páginas dividiendo los memes en grupos de 3
@@ -42,7 +35,7 @@ import Card from "../components/Card";
     setCurrentPage((prev) => (prev - 1 + pages.length) % pages.length);
   };
 
-    return (
+  return (
     <>
       <div className="relative" id="home">
         <img src="src/assets/images/home.png" alt="galeria de memes" className="w-full" />
@@ -50,6 +43,7 @@ import Card from "../components/Card";
           Donde los memes se hacen arte
         </h2>
       </div>
+      <div id="aboutUs"></div>
       <div className="m-14 text-center" id="aboutUs">
         <h2 className="text-3xl font-bold mb-5">Sobre nosotros</h2>
         <p>Memerium: Donde los Memes se Convierten en Arte</p>
@@ -139,6 +133,3 @@ import Card from "../components/Card";
 };
 
 export default Home;
-
-
-

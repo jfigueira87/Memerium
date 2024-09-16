@@ -50,9 +50,6 @@ export async function createMeme(dataMeme) {
   }
 };
 
-
-
-
 //Delete meme -- DELETE
 export async function deleteMeme(id) {
   try {
