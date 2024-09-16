@@ -56,9 +56,10 @@ export async function createMeme(dataMeme) {
 //Delete meme -- DELETE
 export async function deleteMeme(id) {
   try {
-    const reponse = await axios.delete(`${URL_API}/${id}`)
-  } catch {
-
+    const response = await axios.delete(`${URL_API}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error en la solicitud:', error); 
   }
 };
 
