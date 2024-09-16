@@ -64,11 +64,18 @@ export async function deleteMeme(id) {
 };
 
 //Update meme -- PUT
-export async function updateMeme(id) {
+// Función asincrónica para actualizar un meme existente
+export const updateMeme = async (id, dataMeme) => {
   try {
-    const response = await axios.put(`${URL_API}/${id}`, bodyMeme)
-
-  } catch {
-
+    // Realiza una solicitud PUT a la API con el ID y los nuevos datos del meme
+    const response = await axios.put(`${URL_API}/${id}`, dataMeme);
+    // Devuelve los datos de la respuesta
+    return response.data;
+  } catch (error) {
+    // Si ocurre un error, lo registra en la consola
+    console.error(`Error updating meme with id ${id}:`, error);
+    // Lanza el error para que pueda ser manejado por el llamador
+    throw error;
+    
   }
 };
