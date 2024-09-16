@@ -1,13 +1,6 @@
 {
   "memes": [
     {
-      "id": "65c9",
-      "name": "Rumbo al examen",
-      "category": "estudiante",
-      "tags": "titanic",
-      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877674/titanic_xj2mwd.jpg"
-    },
-    {
       "id": "da98",
       "name": "Es la vida",
       "category": "programacion",
