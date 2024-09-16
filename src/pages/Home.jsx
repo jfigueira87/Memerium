@@ -43,6 +43,7 @@ const Home = () => {
           Donde los memes se hacen arte
         </h2>
       </div>
+      <div id="aboutUs"></div>
       <div className="m-14 text-center" id="aboutUs">
         <h2 className="text-3xl font-bold mb-5">Sobre nosotros</h2>
         <p>Memerium: Donde los Memes se Convierten en Arte</p>
