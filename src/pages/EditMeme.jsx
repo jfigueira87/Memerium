@@ -8,7 +8,7 @@ function App() {
 
   const onSubmit = handleSubmit((data) => {
     console.log(data);
-    navigate('/home'); // Ejemplo de redirección después de enviar el formulario
+    navigate('/#'); // Ejemplo de redirección después de enviar el formulario
   });
 
   return (
