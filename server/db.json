@@ -1,7 +1,6 @@
 {
   "memes": [
-  "memes": [
-    {
+      {
       "id": "65c9",
       "name": "Rumbo al examen",
       "category": "estudiante",
@@ -71,6 +70,5 @@
       "keyword": "Hoja de ruta",
       "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726140466/qrcode-generado_nijn6t.png"
     }
-  ]
   ]
 }

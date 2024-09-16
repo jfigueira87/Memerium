@@ -6,10 +6,10 @@ import { Bars3Icon, HomeIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/s
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { PhotoIcon } from '@heroicons/react/20/solid';
-import { EnvelopeIcon } from '@heroicons/react/24/outline';
-import { Bars3Icon, HomeIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/solid'
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+//import { EnvelopeIcon } from '@heroicons/react/24/outline';
+//import { Bars3Icon, HomeIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/solid'
+//import { Link } from 'react-router-dom';
+//import { HashLink } from 'react-router-hash-link';
 
 
 
@@ -117,7 +117,6 @@ export default function Navbar() {
                     </DisclosureButton>
                 </div>
             </DisclosurePanel>
-
-        </Disclosure >
-    )
+        </Disclosure>
+    );
 }
