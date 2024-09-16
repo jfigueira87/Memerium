@@ -5,6 +5,11 @@ import { EnvelopeIcon } from '@heroicons/react/24/outline';
 import { Bars3Icon, HomeIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { PhotoIcon } from '@heroicons/react/20/solid';
+import { EnvelopeIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, HomeIcon, UsersIcon, XMarkIcon } from '@heroicons/react/24/solid'
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 
 
@@ -38,9 +43,12 @@ export default function Navbar() {
                         <Menu as="div" className="relative ml-3 lg:text-primary text-white flex text-sm md:ml-6 md:block md:bg-white ">
                             <div className="flex space-x-12">
                                 <HashLink smooth to="/#home">Inicio</HashLink>
+                                <HashLink smooth to="/#home">Inicio</HashLink>
                                 <MenuButton className="relative">
                                     <span>Galerias</span>
                                 </MenuButton>
+                                <HashLink smooth to="/#aboutUs">Sobre Nosotros</HashLink>
+                                <HashLink smooth to="#contact">Contacto</HashLink>
                                 <HashLink smooth to="/#aboutUs">Sobre Nosotros</HashLink>
                                 <HashLink smooth to="#contact">Contacto</HashLink>
                             </div>
@@ -80,6 +88,19 @@ export default function Navbar() {
                 </div>
             </div>
 
+            <DisclosurePanel className="md:hidden bg-primary text-white w-full h-screen place-content-evenly">
+                <div className="flex flex-col items-center text-center space-y-16">
+                    <DisclosureButton as="a" href="/#home">
+                        <HomeIcon className="size-14 group-data-[open]:block" ></HomeIcon>Inicio
+                    </DisclosureButton>
+                    <DisclosureButton as="a" href="/#contact">
+                        <PhotoIcon className="size-14 group-data-[open]:block" ></PhotoIcon>Galerias
+                    </DisclosureButton>
+                    <DisclosureButton as="a" href="#aboutUs" className="flex flex-col items-center">
+                        <UsersIcon className='size-14 group-data-[open]:block'></UsersIcon>Sobre Nosotros
+                    </DisclosureButton>
+                    <DisclosureButton as="a" href="#contact">
+                        <EnvelopeIcon className='size-14 group-data-[open]:block'></EnvelopeIcon>Contacto
             <DisclosurePanel className="md:hidden bg-primary text-white w-full h-screen place-content-evenly">
                 <div className="flex flex-col items-center text-center space-y-16">
                     <DisclosureButton as="a" href="/#home">

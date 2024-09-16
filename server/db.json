@@ -2,41 +2,6 @@
   "memes": [
   "memes": [
     {
-      "id": "4f3e",
-      "name": "Home Office",
-      "category": "trabajo",
-      "tags": "Spider man",
-      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877207/SPIDER_zinq2v.jpg"
-    },
-    {
-      "id": "a939",
-      "name": "Madrugon universitario",
-      "category": "estudiante",
-      "tags": "Calamardo",
-      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877264/calamardo_x1x87v.jpg"
-    },
-    {
-      "id": "35c5",
-      "name": "Pedro",
-      "category": "estudiante",
-      "tags": "Examen",
-      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877347/pedro_eyalwc.webp"
-    },
-    {
-      "id": "c0a3",
-      "name": "Quienes somos y lo que queremos",
-      "category": "estudiante",
-      "tags": "vacaciones",
-      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877467/vacaciones_hcqe2i.jpg"
-    },
-    {
-      "id": "1ed9",
-      "name": "Familia de Flork",
-      "category": "programacion",
-      "tags": "Código",
-      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877566/Captura_de_pantalla_2024-09-09_122528_exifbf.png"
-    },
-    {
       "id": "65c9",
       "name": "Rumbo al examen",
       "category": "estudiante",

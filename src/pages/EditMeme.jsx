@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
-import { updateMeme } from './api'; 
+import { updateMeme } from '../services/services'; 
 
 function App() {
   const { register, handleSubmit, formState: { errors } } = useForm();
