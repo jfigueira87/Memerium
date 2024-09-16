@@ -15,9 +15,14 @@ export async function getAllMemes() {
 
 //Get one meme by ID -- GET
 
-
-
-
+export async function getOneMeme(id) {
+  try {
+    const response = await axios.get(`${URL_API}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error en la solicitud:', error);
+  }
+};
 
 //Create meme -- POST
 export async function uploadImage(file) {
@@ -46,21 +51,24 @@ export async function createMeme(dataMeme) {
 };
 
 
+
+
 //Delete meme -- DELETE
 export async function deleteMeme(id) {
   try {
-    const reponse = await axios.delete(`${URL_API}/${id}`)
-  } catch {
-
+    const response = await axios.delete(`${URL_API}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error en la solicitud:', error); 
   }
 };
 
 //Update meme -- PUT
-export async function updateMeme(id, bodyMeme) {
+export async function updateMeme(id) {
   try {
-    const response = await axios.put(`${URL_API}/${id}`, bodyMeme);
-    return response.data;
-  } catch (error) {
-    console.error('Error en la solicitud:', error);
+    const response = await axios.put(`${URL_API}/${id}`, bodyMeme)
+
+  } catch {
+
   }
-}
+};
