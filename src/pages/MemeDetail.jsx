@@ -106,4 +106,3 @@ const MemeDetail = () => {
 }
 
 export default MemeDetail;
-
