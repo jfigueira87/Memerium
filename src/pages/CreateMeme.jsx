@@ -23,7 +23,7 @@ const CreateMeme = () => {
   }
 
   return (
-    <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 bg-primary">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
         <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">Agregar un meme</h2>
       </div>
@@ -70,7 +70,7 @@ const CreateMeme = () => {
             </div>
           </div>
           <div>
-            <input type="submit" value="Add Image" className="flex w-full justify-center rounded-md bg-gray-300 px-3 py-1.5 text-sm font-semibold leading-6 text-primary shadow-sm"/>
+            <input type="submit" value="Agregar meme" className="flex w-full justify-center rounded-md bg-gray-300 px-3 py-1.5 text-sm font-semibold leading-6 text-primary shadow-sm"/>
           </div>
         </form>
       </div>
