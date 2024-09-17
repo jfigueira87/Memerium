@@ -3,9 +3,9 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { getOneMeme, deleteMeme } from '../services/services';
 
 const MemeDetail = () => {
-  const { id } = useParams(); // Funcion del router dom para obtener el Id de la URL
-  const [memeData, setMemeData] = useState(null); // Estado para almacenar los datos del meme
-  const [loading, setLoading] = useState(true); // Estado para mostrar si está cargando
+  const { id } = useParams();
+  const [memeData, setMemeData] = useState(null);
+  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const MemeDetail = () => {
       try {
         const data = await getOneMeme(id);
         setMemeData(data);
-        setLoading(false); // Deja de mostrar el cargando
+        setLoading(false);
       } catch (error) {
         console.error("Error al obtener los datos del meme:", error);
         setLoading(false);
@@ -26,7 +26,7 @@ const MemeDetail = () => {
   const handleDelete = async () => {
     try {
       await deleteMeme(id);
-      navigate("/"); //redirige a home
+      navigate("/"); // redirige a la página de inicio
     } catch (error) {
       console.error("Error al eliminar el meme:", error);
     }
@@ -37,7 +37,7 @@ const MemeDetail = () => {
       <div className="text-center font-delius text-lg text-gray-500">
         Cargando...
       </div>
-    ); // Mostrar cargando mientras se obtienen los datos
+    );
   }
 
   if (!memeData) {
@@ -45,34 +45,34 @@ const MemeDetail = () => {
       <div className="text-center font-delius text-lg text-red-500">
         No se encontró el meme
       </div>
-    ); // Mostrar esto si no se encuentra el meme
+    );
   }
 
   return (
-    <div className="min-h-screen w-full flex flex-col items-center bg-secondary py-8">
-      
+    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-secondary py-8">
       {/* Contenedor principal */}
       <div className="max-w-6xl w-full px-4 md:px-8 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
-        /*
+        
         {/* Contenedor para la imagen con el marco */}
         <div className="relative w-full md:w-1/2 flex justify-center">
           <div
-            className="p-4 rounded-lg shadow-lg w-full md:w-[350px] bg-no-repeat bg-center bg-cover"
+            className="p-4 rounded-lg shadow-lg w-full max-w-sm bg-no-repeat bg-center"
             style={{
-              backgroundImage: "url('../src/assets/images/marcoCard.png')", // Ruta del archivo del marco
+              backgroundImage: "url('../src/assets/images/marcoCard.png')",
+              backgroundSize: 'contain' // Ajustar el tamaño del marco
             }}
           >
             <img
               src={memeData.url}
               alt={memeData.name}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-contain"
             />
           </div>
-  
+
           {/* Lámpara encima de la imagen */}
-          <div className="absolute -top-24 left-1/2 transform -translate-x-1/2 w-36 md:w-48">
+          <div className="absolute -top-16 md:-top-20 left-1/2 transform -translate-x-1/2 w-24 md:w-36">
             <img
-              src="../src/assets/images/luzCard.png" // Ruta del archivo de la lámpara
+              src="../src/assets/images/luzCard.png"
               alt="Lamp"
               className="w-full h-auto"
             />
@@ -80,7 +80,7 @@ const MemeDetail = () => {
         </div>
   
         {/* Información del meme */}
-        <div className="w-full md:w-1/2 text-white font-mainFont space-y-4">
+        <div className="w-full md:w-1/2 text-white font-mainFont space-y-4 text-center md:text-left">
           <h2 className="text-xl md:text-2xl font-semibold">Título: {memeData.name}</h2>
           <p className="text-lg break-words">URL: <span className="break-all">{memeData.url}</span></p>
           <p className="text-lg">Categoría: {memeData.category}</p>
