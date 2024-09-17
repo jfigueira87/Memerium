@@ -51,7 +51,7 @@ const MemeDetail = () => {
   }
 
   return (
-    <div className="min-h-screen w-full flex flex-row justify-center items-center items-center bg-secondary py-8 space-x-10">
+    <div className="min-h-screen w-full flex flex-row justify-center items-center bg-secundary py-8 space-x-10">
       
       <div className='flex items-center justify-center flex-col'>
         <div className='flex items-center justify-center'>

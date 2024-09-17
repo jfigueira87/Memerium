@@ -46,10 +46,15 @@ const EditMeme = () => {
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         <form id="formAddMeme" className="space-y-6">
           <div>
-            <label className="block text-sm font-medium leading-6 text-white">Título</label>
+            <label className="block text-sm font-medium leadnaming-6 text-white">Título</label>
             <div className="mt-2">
-              <input type="text" className="block w-full rounded-md py-1.5 text-black bg-primarylight ring-1 ring-secondary" value={memeData.name} ></input>
-
+              <input 
+              type="text" 
+              className="block w-full rounded-md py-1.5 text-black bg-primarylight ring-1 ring-secondary" 
+              value={memeData.name} 
+              onChange={(e) => setMemeData({ ...memeData, name: e.target.value })}
+              ></input>
+              
             </div>
           </div>
 
@@ -64,7 +69,11 @@ const EditMeme = () => {
           <div>
             <label className="block text-sm font-medium leading-6 text-white">Categoria</label>
             <div className="mt-2">
-              <select value={memeData.category} type="text" className="block w-full rounded-md py-1.5 text-black bg-primarylight ring-1 ring-secondary">
+              <select value={memeData.category} 
+              type="text" 
+              className="block w-full rounded-md py-1.5 text-black bg-primarylight ring-1 ring-secondary"
+              onChange={(e) => setMemeData({ ...memeData, category: e.target.value })}
+              >
                 {/* <option value=""> Seleccione una categoria </option> */}
                 <option value="trabajo">Trabajo</option>
                 <option value="programacion">Programación</option>
@@ -76,7 +85,12 @@ const EditMeme = () => {
           <div>
             <label className="block text-sm font-medium leading-6 text-white">Palabras clave</label>
             <div className="mt-2">
-              <input type="text" className="block w-full rounded-md py-1.5 text-black bg-primarylight ring-1 ring-secondary" value={memeData.tags} ></input>
+              <input 
+              type="text" 
+              className="block w-full rounded-md py-1.5 text-black bg-primarylight ring-1 ring-secondary" 
+              value={memeData.tags}
+              onChange={(e) => setMemeData({ ...memeData, tags: e.target.value })}
+               ></input>
 
             </div>
           </div>
