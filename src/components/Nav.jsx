@@ -48,83 +48,81 @@ export default function Navbar() {
                                 transition
                                 className="absolute -translate-x-44 translate-y-6 right-0 z-10 w-50"
                             >
-
                                 <Link to={`/gallerywork`}>
                                     <MenuItem>
-                                        <a href="#" className="text-white bg-primary block px-4 py-3 text-center">
+                                        <text className="text-white bg-secondary block px-4 py-3 text-center">
                                             memes de trabajo
-                                        </a>
+                                        </text>
                                     </MenuItem>
                                 </Link>
-
                                 <Link to={`/galleryprogram`}>
-                                    <MenuItem>
-                                        <a href="#" className="text-primary bg-white block px-4 py-3 text-center ">
+                                    <MenuItem >
+                                        <text className="text-primary bg-white block px-4 py-3 text-center ">
                                             memes de programación
-                                        </a>
+                                        </text>
                                     </MenuItem>
                                 </Link>
-
                                 <Link to={`/gallerystudent`}>
                                     <MenuItem>
-                                        <a href="#" className="text-white bg-secondary block px-4 py-3 text-center">
+                                        <text className="text-white bg-secondary block px-4 py-3 text-center">
                                             memes de estudiante
-                                        </a>
+                                        </text>
                                     </MenuItem>
                                 </Link>
-
-
                             </MenuItems>
                         </Menu>
                     </div>
                 </div>
             </div>
 
-            <DisclosurePanel className="md:hidden bg-primary text-white w-full h-screen place-content-evenly">
+            <DisclosurePanel className="md:hidden bg-primary text-white w-full h-screen place-content-center">
                 <div className="flex flex-col items-center text-center">
-                    <Menu as="div" className="ml-3 lg:text-primary text-white flex flex-col text-sm md:ml-6 md:block md:bg-white space-y-16">
-                        <DisclosureButton as="a" href="/#home" className="flex flex-col items-center">
-                            <HomeIcon className="size-14 group-data-[open]:block" ></HomeIcon>Inicio
-                        </DisclosureButton>
-                        <MenuButton as="a" className="flex flex-col items-center">
+                    <Menu as="div" className="flex flex-col text-sm space-y-16">
+
+                        <HashLink smooth to="/#home">
+                            <DisclosureButton className="flex flex-col items-center  translate-x-4">
+                                <HomeIcon className="size-14 group-data-[open]:block" ></HomeIcon>Inicio
+                            </DisclosureButton>
+                        </HashLink>
+
+                        <MenuButton className="flex flex-col items-center">
                             <span><PhotoIcon className="size-14 group-data-[open]:block" ></PhotoIcon>Galerias</span>
                         </MenuButton>
-                        <DisclosureButton as="a" href="/#aboutUs" className="flex flex-col items-center">
-                            <UsersIcon className='size-14 group-data-[open]:block'></UsersIcon>Sobre Nosotros
-                        </DisclosureButton>
-                        <DisclosureButton as="a" href="#contact" className="flex flex-col items-center">
-                            <EnvelopeIcon className='size-14 group-data-[open]:block'></EnvelopeIcon>Contacto
-                        </DisclosureButton>
+
+                        <HashLink smooth to="/#aboutUs">
+                            <DisclosureButton className="flex flex-col items-center">
+                                <UsersIcon className="size-14 group-data-[open]:block"></UsersIcon>Sobre Nosotros
+                            </DisclosureButton>
+                        </HashLink>
+
+                        <HashLink smooth to="#contact">
+                            <DisclosureButton className="flex flex-col items-center translate-x-6">
+                                <EnvelopeIcon className="size-14 group-data-[open]:block "></EnvelopeIcon>Contacto
+                            </DisclosureButton>
+                        </HashLink>
+
                         <MenuItems
                             transition
                             className="absolute -translate-x-8 translate-y-40 w-">
-
                             <Link to={`/gallerywork`}>
-                                <MenuItem>
-                                    <DisclosureButton href="#galleryWork" className="text-white bg-secondary block px-2 py-2 text-center group-data-[open]:block w-40">
-                                        <PhotoIcon className='size-6'></PhotoIcon>trabajo
-                                    </DisclosureButton>
-                                </MenuItem>
+                                <DisclosureButton className="text-white bg-secondary block px-2 py-2 text-center group-data-[open]:block w-40">
+                                    <PhotoIcon className='size-6'></PhotoIcon> trabajo
+                                </DisclosureButton>
                             </Link>
                             <Link to={`/galleryprogram`}>
-                                <MenuItem>
-                                    <DisclosureButton href="#galleryProgram" className="text-primary bg-white block px-2 py-2 text-center group-data-[open]:block w-40">
-                                        <PhotoIcon className='size-6'></PhotoIcon>programación
-                                    </DisclosureButton>
-                                </MenuItem>
+                                <DisclosureButton className="text-primary bg-white block px-2 py-2 text-center group-data-[open]:block w-40">
+                                    <PhotoIcon className='size-6'></PhotoIcon> programación
+                                </DisclosureButton>
                             </Link>
                             <Link to={`/gallerystudent`}>
-                                <MenuItem>
-                                    <DisclosureButton href="#galleryStudent" className="text-white bg-secondary block px-2 py-2 text-center group-data-[open]:block w-40">
-                                        <PhotoIcon className='size-6'></PhotoIcon>estudiante
-                                    </DisclosureButton>
-                                </MenuItem>
+                                <DisclosureButton className="text-white bg-secondary block px-2 py-2 text-center group-data-[open]:block w-40">
+                                    <PhotoIcon className='size-6'></PhotoIcon> estudiantes
+                                </DisclosureButton>
                             </Link>
                         </MenuItems>
                     </Menu>
                 </div>
             </DisclosurePanel>
-
         </Disclosure >
     )
 }
