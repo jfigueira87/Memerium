@@ -14,6 +14,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
     return (
+        
         <Disclosure as="nav" className="bg-white text-primary font-mainFont font-bold top-0 left-0 w-full sticky z-50">
             <div className="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
@@ -50,7 +51,7 @@ export default function Navbar() {
                             >
                                 <Link to={`/gallerywork`}>
                                     <MenuItem>
-                                        <text className="text-white bg-secondary block px-4 py-3 text-center">
+                                        <text className="text-white bg-secundary block px-4 py-3 text-center">
                                             memes de trabajo
                                         </text>
                                     </MenuItem>
@@ -64,7 +65,7 @@ export default function Navbar() {
                                 </Link>
                                 <Link to={`/gallerystudent`}>
                                     <MenuItem>
-                                        <text className="text-white bg-secondary block px-4 py-3 text-center">
+                                        <text className="text-white bg-secundary block px-4 py-3 text-center">
                                             memes de estudiante
                                         </text>
                                     </MenuItem>
@@ -105,7 +106,7 @@ export default function Navbar() {
                             transition
                             className="absolute -translate-x-8 translate-y-40 w-">
                             <Link to={`/gallerywork`}>
-                                <DisclosureButton className="text-white bg-secondary block px-2 py-2 text-center group-data-[open]:block w-40">
+                                <DisclosureButton className="text-white bg-secundary block px-2 py-2 text-center group-data-[open]:block w-40">
                                     <PhotoIcon className='size-6'></PhotoIcon> trabajo
                                 </DisclosureButton>
                             </Link>
@@ -115,7 +116,7 @@ export default function Navbar() {
                                 </DisclosureButton>
                             </Link>
                             <Link to={`/gallerystudent`}>
-                                <DisclosureButton className="text-white bg-secondary block px-2 py-2 text-center group-data-[open]:block w-40">
+                                <DisclosureButton className="text-white bg-secundary block px-2 py-2 text-center group-data-[open]:block w-40">
                                     <PhotoIcon className='size-6'></PhotoIcon> estudiantes
                                 </DisclosureButton>
                             </Link>
@@ -126,3 +127,4 @@ export default function Navbar() {
         </Disclosure >
     )
 }
+
