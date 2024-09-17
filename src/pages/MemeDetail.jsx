@@ -59,10 +59,10 @@ const MemeDetail = () => {
   // Formulario con los datos del meme, aún me falta meterle estilo, la imagen del meme y los botones
   return (
     <div className="min-h-screen w-full flex flex-col justify-center bg-secondary">
-      
+
       {/* Contenedor principal */}
       <div className="max-w-6xl w-full mx-auto p-8 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
-        
+
         {/* Contenedor para la imagen con el marco */}
         <div className="relative w-full md:w-1/2 flex justify-center">
           <div
@@ -78,7 +78,7 @@ const MemeDetail = () => {
               className="w-full h-auto"
             />
           </div>
-  
+
           {/* Lámpara encima de la imagen */}
           <div className="absolute -top-24 left-1/2 transform -translate-x-1/2 w-36">
             <img
@@ -88,14 +88,14 @@ const MemeDetail = () => {
             />
           </div>
         </div>
-  
+
         {/* Información del meme */}
         <div className="w-full md:w-1/2 text-white font-mainFont space-y-4">
           <h2 className="text-xl font-semibold">Título: {memeData.name}</h2>
           <p className="text-lg">URL: {memeData.url}</p>
           <p className="text-lg">Categoría: {memeData.category}</p>
           <p className="text-lg">Palabras claves: {Array.isArray(memeData.tags) ? memeData.tags.join(', ') : memeData.tags}</p>
-        
+
           {/* Botones */}
           <div className="flex space-x-4 mt-4">
             <button
@@ -104,17 +104,17 @@ const MemeDetail = () => {
             >
               Eliminar meme
             </button>
-            <Link
-              to="/"
-              className="w-1/2 bg-colorButton text-primary font-semibold py-2 px-4 rounded-md shadow-md hover:bg-gray-400 text-center"
-            >
-              Volver a la lista
-            </Link>
+
+            {/* <button onClick={openEdit(id)} className="w-1/2 bg-colorButton text-primary font-semibold py-2 px-4 rounded-md shadow-md hover:bg-gray-400 text-center">
+              Editar información
+            </button> */}
+
+            <Link to={`/editmeme/${id}`}><button className='w-1/2 bg-colorButton text-primary font-semibold py-2 px-4 rounded-md shadow-md hover:bg-gray-400 text-center'>Editar meme</button></Link>
+
           </div>
         </div>
       </div>
     </div>
   );
 }
-export default MemeDetail  
-  
+export default MemeDetail
