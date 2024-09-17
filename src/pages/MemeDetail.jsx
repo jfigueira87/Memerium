@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { getOneMeme, deleteMeme } from '../services/services';
+import luzMarco from '../assets/images/luzCard.png'
+import marcoCard from '../assets/images/marcoCard.png'
 
 const MemeDetail = () => {
   const { id } = useParams(); // Funcion del router dom para obtener el Id de la URL
@@ -49,35 +51,16 @@ const MemeDetail = () => {
   }
 
   return (
-    <div className="min-h-screen w-full flex flex-col items-center bg-secondary py-8">
+    <div className="min-h-screen w-full flex flex-row justify-center items-center items-center bg-secondary py-8 space-x-10">
       
-      {/* Contenedor principal */}
-      <div className="max-w-6xl w-full px-4 md:px-8 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
-        /*
-        {/* Contenedor para la imagen con el marco */}
-        <div className="relative w-full md:w-1/2 flex justify-center">
-          <div
-            className="p-4 rounded-lg shadow-lg w-full md:w-[350px] bg-no-repeat bg-center bg-cover"
-            style={{
-              backgroundImage: "url('../src/assets/images/marcoCard.png')", // Ruta del archivo del marco
-            }}
-          >
-            <img
-              src={memeData.url}
-              alt={memeData.name}
-              className="w-full h-auto object-cover"
-            />
-          </div>
-  
-          {/* Lámpara encima de la imagen */}
-          <div className="absolute -top-24 left-1/2 transform -translate-x-1/2 w-36 md:w-48">
-            <img
-              src="../src/assets/images/luzCard.png" // Ruta del archivo de la lámpara
-              alt="Lamp"
-              className="w-full h-auto"
-            />
-          </div>
+      <div className='flex items-center justify-center flex-col'>
+        <div className='flex items-center justify-center'>
+          <img src={luzMarco} alt="light"/>
         </div>
+        <div className="w-[330px] h-[348px] flex items-center justify-center " style={{ backgroundImage: `url(${marcoCard})` }}>
+          <img className="w-[280px] h-[310px] ml-0.5" src={memeData.url} alt="Painting frame" />
+        </div>
+      </div>
   
         {/* Información del meme */}
         <div className="w-full md:w-1/2 text-white font-mainFont space-y-4">
@@ -90,18 +73,18 @@ const MemeDetail = () => {
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-4">
             <button
               onClick={handleDelete}
-              className="w-full md:w-1/2 bg-colorButton text-primary font-semibold py-2 px-4 rounded-md shadow-md hover:bg-gray-400">
+              className="lg: w-50 md:w-1/2 bg-colorButton text-primary font-semibold py-2 px-4 rounded-md shadow-md hover:bg-gray-400">
               Eliminar meme
             </button>
             <Link
               to={`/editmeme/${id}`}
-              className="w-full md:w-1/2 bg-colorButton text-primary font-semibold py-2 px-4 rounded-md shadow-md hover:bg-gray-400 text-center">
+              className="md:w-1/2 bg-colorButton text-primary font-semibold py-2 px-4 rounded-md shadow-md hover:bg-gray-400 text-center">
               Editar Información
             </Link>
           </div>
         </div>
       </div>
-    </div>
+    
   );
 }
 

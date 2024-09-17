@@ -53,7 +53,7 @@ const Home = () => {
       </div>
 
       {/* Carrusel */}
-      <div className="relative overflow-hidden bg-[#1E4F64]">
+      <div className="relative overflow-hidden bg-secondary">
         {/* Wrapper del Carrusel */}
         <div
           className="relative flex transition-transform duration-700 ease-in-out my-20 justify-center"
