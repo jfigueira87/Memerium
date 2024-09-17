@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <>
       <div className="relative" id="home">
-        <img src="src/assets/images/home.jpg" alt="galeria de memes" className="w-full" />
+        <img src="src/assets/images/home.png" alt="galeria de memes" className="w-full" />
         <h2 className="text-white text-6xl absolute bottom-10 left-1/2 transform -translate-x-1/2">
           Donde los memes se hacen arte
         </h2>
@@ -54,7 +54,7 @@ const Home = () => {
       </div>
 
       {/* Carrusel */}
-      <div className="relative overflow-hidden bg-secondary">
+      <div className="relative overflow-hidden bg-secundary">
         {/* Wrapper del Carrusel */}
         <div
           className="relative flex transition-transform duration-700 ease-in-out my-20 justify-center"
