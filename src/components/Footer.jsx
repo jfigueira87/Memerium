@@ -1,6 +1,9 @@
 // Footer
 
 import React from 'react'
+import iconFacebook from '../assets/images/iconFacebook.png'
+import iconYoutube from '../assets/images/iconYoutube.png'
+import iconShare from '../assets/images/iconShare.png'
 
 const Footer = () => {
   return (
@@ -13,9 +16,9 @@ const Footer = () => {
       <p>Contacto: 445465757</p>
       <p>Correo electrónico: memento@gmail.com</p>
     <div className="lg:flex flex lg:mt-6 space-x-3 max-sm:mt-4 max-sm:justify-center lg:space-x-3">   
-      <img className="lg:h-10 h-10 lg:" src="src/assets/icons.memrium/🦆 icon.share.png" alt="Icono compartir" />
-      <img className="lg:h-10 lg:flex-row h-10 lg:" src="src/assets/icons.memrium/icon.youtube.png" alt="Icono YouTube" />
-      <img className="lg:h-10 h-10 lg:" src="src/assets/icons.memrium/🦆 icon .facebook.png" alt="Icono Facebook" />
+      <img className="lg:h-10 h-10 lg:" src={iconShare} alt="Icono compartir" />
+      <img className="lg:h-10 lg:flex-row h-10 lg:" src={iconYoutube} alt="Icono YouTube" />
+      <img className="lg:h-10 h-10 lg:" src={iconFacebook} alt="Icono Facebook" />
     </div>  
     </div>
   </div>
