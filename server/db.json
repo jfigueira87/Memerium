@@ -15,11 +15,11 @@
       "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877264/calamardo_x1x87v.jpg"
     },
     {
-      "id": "c0a3",
-      "name": "Quienes somos y lo que queremos",
+      "name": "Quienes somos y lo que queremos23",
       "category": "estudiante",
       "tags": "vacaciones",
-      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877467/vacaciones_hcqe2i.jpg"
+      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877467/vacaciones_hcqe2i.jpg",
+      "id": "c0a3"
     },
     {
       "id": "1ed9",
@@ -69,6 +69,13 @@
       "category": "programacion",
       "tags": "aa",
       "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726575436/61QYgeRICdL._SY466__vapwk3.jpg"
+    },
+    {
+      "id": "4e2e",
+      "name": "harry potter",
+      "category": "programacion",
+      "tags": "magic",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726576834/meme.harry_ivcihw.jpg"
     }
   ]
 }
