@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { getOneMeme, deleteMeme } from "../services/services";
 
-//Hay que definir el loader y exportar
-export async function loader({ params }) {
-  const data = await getOneMeme(params.id);
-  return { meme: data };
-}
+// // Hay que definir el loader y exportar
+// export async function loader({ params }) {
+//   const data = await getOneMeme(params.id);
+//   return { meme: data };
+// }
 
 const EditMeme = () => {
   const { id } = useParams(); // Funcion del router dom para obtener el Id de la URL
@@ -28,14 +28,34 @@ const EditMeme = () => {
     fetchMeme();
   }, [id]);
 
-//   const handleDelete = async () => {
-//     try {
-//       await deleteMeme(id);
-//       navigate("/"); //redirige a home
-//     } catch (error) {
-//       console.error("Error al eliminar el meme:", error);
-//     }
-//   };
+
+function updateMeme() {
+  const { register, formState: { errors } } = useForm();
+  const navigate = useNavigate();
+
+  const onSubmit = (data) =>{  
+    console.log(data);  
+    updateMeme({id, dataMeme})
+    navigate("/") 
+  }}
+
+
+
+// import { useForm } from 'react-hook-form';
+// import { useNavigate } from 'react-router-dom';
+
+// function App() {
+//   const { register, handleSubmit, formState: { errors } } = useForm();
+//   const navigate = useNavigate();
+
+//   const onSubmit = handleSubmit((data) => {
+//     console.log(data);
+//     navigate('/#'); // Ejemplo de redirección después de enviar el formulario
+//   });
+
+
+
+
 
   return (
     <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 bg-primary">
@@ -44,7 +64,7 @@ const EditMeme = () => {
       </div>
 
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-        <form id="formAddMeme" className="space-y-6">
+        <form id="formAddMeme" className="space-y-6" onSubmit={onSubmit}>
           <div>
             <label className="block text-sm font-medium leadnaming-6 text-white">Título</label>
             <div className="mt-2">
