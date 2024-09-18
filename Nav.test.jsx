@@ -13,7 +13,7 @@ describe('Navbar', () => {
     
     // Verifica que el título "Memerium" está en la página
     const title = screen.getByText('Memerium');
-    expect(title).not.toBeNull(); // Verifica que no sea null o undefined
+    expect(title).not.toBeNull(); 
     
     // Verifica que los enlaces están presentes
     const inicioLink = screen.getByText('Inicio');
