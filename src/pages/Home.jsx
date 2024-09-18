@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const [memes, setMemes] = useState([]);
-  const [itemsPerPage, setItemsPerPage] = useState(1); // Inicialmente 1 para mobile
-
+  const [itemsPerPage, setItemsPerPage] = useState(1);
   const fetchData = async () => {
     const dataMemes = await getAllMemes();
     setMemes(dataMemes);
@@ -19,21 +18,18 @@ const Home = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 412) {
-        setItemsPerPage(1); // Mostrar 1 elemento por página en móviles
+        setItemsPerPage(1);
       } else if (window.innerWidth <= 1025) {
-        setItemsPerPage(2); // Mostrar 2 elementos por página en tablets y pantallas pequeñas
+        setItemsPerPage(2);
       } else {
-        setItemsPerPage(3); // Mostrar 3 elementos por página en pantallas grandes
+        setItemsPerPage(3);
       }
     };
-
     window.addEventListener('resize', handleResize);
-    handleResize(); // Llama a la función para ajustar itemsPerPage inicialmente
-
+    handleResize();
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Crear las páginas dividiendo los memes en grupos según itemsPerPage
   const pages = [];
   for (let i = 0; i < Math.ceil(memes.length / itemsPerPage); i++) {
     pages.push(memes.slice(i * itemsPerPage, i * itemsPerPage + itemsPerPage));
@@ -202,8 +198,6 @@ const Home = () => {
           </button>
         </div>
       </div>
-
-
     </>
   );
 };

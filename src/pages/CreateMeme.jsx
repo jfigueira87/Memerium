@@ -4,8 +4,6 @@ import { uploadImage } from '../services/services';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 
-
-
 const CreateMeme = () => {
   const {register, formState:{errors},handleSubmit} = useForm();
   const navigate = useNavigate();

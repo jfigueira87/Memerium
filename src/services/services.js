@@ -1,9 +1,8 @@
 import axios from "axios";
 const URL_API = "http://localhost:3000/memes";
-const URL_STORAGE = "https://api.cloudinary.com/v1_1/dz53okn10/image/upload"; //url del repositorio de imagenes CLOUDINARY
+const URL_STORAGE = "https://api.cloudinary.com/v1_1/dz53okn10/image/upload";
 
 //Get all memes -- GET
-
 export async function getAllMemes() {
   try {
     const response = await axios.get(URL_API);
@@ -14,7 +13,6 @@ export async function getAllMemes() {
 };
 
 //Get one meme by ID -- GET
-
 export async function getOneMeme(id) {
   try {
     const response = await axios.get(`${URL_API}/${id}`);
@@ -32,7 +30,7 @@ export async function uploadImage(file) {
     formData.append('file', file);
 
     const response = await axios.post(URL_STORAGE, formData);
-    return response.data; // Devuelve los datos de la respuesta, incluyendo la URL de la imagen
+    return response.data;
   } catch (error) {
     console.log("ERROR en la subida de la imagen", error);
   }
@@ -50,9 +48,6 @@ export async function createMeme(dataMeme) {
   }
 };
 
-
-
-
 //Delete meme -- DELETE
 export async function deleteMeme(id) {
   try {
@@ -64,18 +59,12 @@ export async function deleteMeme(id) {
 };
 
 //Update meme -- PUT
-// Función asincrónica para actualizar un meme existente
 export const updateMeme = async (id, dataMeme) => {
   try {
-    // Realiza una solicitud PUT a la API con el ID y los nuevos datos del meme
     const response = await axios.put(`${URL_API}/${id}`, dataMeme);
-    // Devuelve los datos de la respuesta
     return response.data;
   } catch (error) {
-    // Si ocurre un error, lo registra en la consola
     console.error(`Error updating meme with id ${id}:`, error);
-    // Lanza el error para que pueda ser manejado por el llamador
     throw error;
-
   }
 };
