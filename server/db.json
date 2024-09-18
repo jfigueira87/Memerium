@@ -64,13 +64,6 @@
       "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726515502/61QYgeRICdL._SY466__z0xusm.jpg"
     },
     {
-      "id": "19ea",
-      "name": "aa",
-      "category": "programacion",
-      "tags": "aa",
-      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726575436/61QYgeRICdL._SY466__vapwk3.jpg"
-    },
-    {
       "id": "4e2e",
       "name": "harry potter",
       "category": "programacion",
@@ -83,6 +76,160 @@
       "category": "estudiante",
       "tags": "examen",
       "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726648519/1_chuihq.jpg"
+    },
+    {
+      "id": "88a0",
+      "name": "Estudiante",
+      "category": "estudiante",
+      "tags": "payaso",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726648951/estudio_dc0ixt.jpg"
+    },
+    {
+      "id": "0a81",
+      "name": "Vivan las mentiras",
+      "category": "estudiante",
+      "tags": "examen patricio bob-esponja",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726649095/esponja_tssbi3.jpg"
+    },
+    {
+      "id": "8913",
+      "name": "Eso ando haciendo",
+      "category": "estudiante",
+      "tags": "bart simpson estudio TV",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726649227/estudiando_deq5rd.jpg"
+    },
+    {
+      "id": "3363",
+      "name": "Cuando vas a estudiar",
+      "category": "estudiante",
+      "tags": "estudio netflix",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726649327/netflix_qwevyt.jpg"
+    },
+    {
+      "id": "3a60",
+      "name": "Estudiar es facil",
+      "category": "estudiante",
+      "tags": "sheldon examen",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726649360/recordar_bomjar.jpg"
+    },
+    {
+      "id": "a200",
+      "name": "Por favor profe",
+      "category": "estudiante",
+      "tags": "examen dificil llorando",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726649403/porfavor_crd1nq.jpg"
+    },
+    {
+      "id": "a899",
+      "name": "5 minutos despues",
+      "category": "trabajo",
+      "tags": "ardilla amabilidad estres",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726649555/5_minutos_s7q8lx.jpg"
+    },
+    {
+      "id": "730d",
+      "name": "¿Y si falto mañana?",
+      "category": "trabajo",
+      "tags": "batman indispensable",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726649685/indispensable_hg5rl1.png"
+    },
+    {
+      "id": "a124",
+      "name": "Ganas de trabajar",
+      "category": "trabajo",
+      "tags": "Don Ramon dormir",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726649788/images_z0skgs.jpg"
+    },
+    {
+      "id": "9482",
+      "name": "Sal de este cuerpo trabajador",
+      "category": "trabajo",
+      "tags": "flojera rana",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726649907/rana_tqyjc2.jpg"
+    },
+    {
+      "id": "460b",
+      "name": "¿Por qué lloras?",
+      "category": "trabajo",
+      "tags": "llorar sábado",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726649988/sabado_zlo4py.jpg"
+    },
+    {
+      "id": "0e52",
+      "name": "Trabajo en equipo",
+      "category": "trabajo",
+      "tags": "trabajo equipo",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650052/equipo_bzntzo.jpg"
+    },
+    {
+      "id": "b130",
+      "name": "Adivina",
+      "category": "trabajo",
+      "tags": "dia del trabajo",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650221/1de_wyae9h.webp"
+    },
+    {
+      "id": "2a85",
+      "name": "Si existe el dia del trabajador...",
+      "category": "trabajo",
+      "tags": "flojera dino",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650324/dia-del-trabajo-meme6.jpg_hsrkbc.webp"
+    },
+    {
+      "name": "Si el trabajo es salud...",
+      "category": "trabajo",
+      "tags": "enfermos ",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650435/enfermos_log8qo.webp",
+      "id": "f292"
+    },
+    {
+      "id": "abc1",
+      "name": "Novato vs experto",
+      "category": "programacion",
+      "tags": "codigo novato experto ",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650528/CODIGO_o9ra8a.jpg"
+    },
+    {
+      "id": "0bed",
+      "name": "Dame el código",
+      "category": "programacion",
+      "tags": "código simpson ",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650599/codigooo_rkhlzn.jpg"
+    },
+    {
+      "id": "bb15",
+      "name": "Diseñadores vs. programadores",
+      "category": "programacion",
+      "tags": "código idea robar",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650732/dis_prog_thgbck.jpg"
+    },
+    {
+      "id": "6539",
+      "name": "¿Pandemia?",
+      "category": "programacion",
+      "tags": "programar responsable",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650826/pam_ozzxsd.jpg"
+    },
+    {
+      "id": "523a",
+      "name": "¿Por qué?",
+      "category": "programacion",
+      "tags": "compilar",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650900/cppila_nma4vs.jpg"
+    },
+    {
+      "id": "672f",
+      "name": "No hace nada",
+      "category": "programacion",
+      "tags": "compilar ",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650959/aa_zcb9by.jpg"
+    },
+    {
+      "id": "d68c",
+      "name": "¡Por fin!",
+      "category": "programacion",
+      "tags": "bugs enojo corregir ",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726651025/bugs_ymnkjx.jpg"
     }
   ]
 }
