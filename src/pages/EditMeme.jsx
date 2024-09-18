@@ -33,7 +33,7 @@ const EditMeme = () => {
   const navigate = useNavigate();
   const onSubmit = (data) =>{    
     updateMeme(id, data)
-    navigate("/") 
+    navigate(-1) 
   }
 
   return (
@@ -93,7 +93,7 @@ const EditMeme = () => {
           </div>
 
           <div>
-          <Link to={`/detailmeme/${id_meme}`}><input type="submit" value="Guardar información" className="flex w-full justify-center rounded-md bg-gray-300 px-3 py-1.5 text-sm font-semibold leading-6 text-primary shadow-sm" /></Link>
+          <input type="submit" value="Guardar información" className="flex w-full justify-center rounded-md bg-gray-300 px-3 py-1.5 text-sm font-semibold leading-6 text-primary shadow-sm" />  
           </div>
 
         </form>
