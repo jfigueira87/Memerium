@@ -62,7 +62,7 @@ const Home = () => {
           alt="galeria de memes mobile"
           className="w-full hidden sm:block"
         />
-        <h2 className="text-white sm:text-6xl text-3xl absolute sm:bottom-10 bottom-5 left-1/2 transform -translate-x-1/2 text-center w-full">
+        <h2 className="text-white sm:text-6xl text-3xl absolute sm:bottom-28 bottom-5 left-1/2 transform -translate-x-1/2 text-center w-full">
           Donde los memes se hacen arte
         </h2>
       </div>
@@ -204,6 +204,27 @@ const Home = () => {
 
 export default Home;
 
+// const Home = () => {
+//   const [memes, setMemes] = useState([]);
+
+//   const fetchData = async () => {
+//     const dataMemes = await getAllMemes();
+//     setMemes(dataMemes); // Aquí guardas los datos en el estado `memes`
+//   };
+
+//   useEffect(() => {
+//     fetchData();
+//   }, []);
+
+//   return (
+//     <>
+      
+//       {memes.map((meme, index) => (
+//         <Card url={meme.url} id_meme={meme.id}/>
+//       ))}
+//     </>
+//   );
+// };
 
 
 
