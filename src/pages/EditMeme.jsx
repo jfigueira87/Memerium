@@ -4,15 +4,9 @@ import { getOneMeme, updateMeme } from "../services/services";
 import { useForm } from "react-hook-form";
 import { useLoaderData } from "react-router-dom";
 
-// // Hay que definir el loader y exportar
-// export async function loader({ params }) {
-//   const data = await getOneMeme(params.id);
-//   return { meme: data };
-// }
-
 const EditMeme = () => {
-  const { id } = useParams(); // Funcion del router dom para obtener el Id de la URL
-  const [memeData, setMemeData] = useState(''); // Estado para almacenar los datos del meme
+  const { id } = useParams(); 
+  const [memeData, setMemeData] = useState(''); 
   const {register, handleSubmit, setValue} = useForm ();
 
   useEffect(() => {
@@ -35,43 +29,11 @@ const EditMeme = () => {
     fetchMeme();
   }, [id, setValue]);
   
-  
-
   const navigate = useNavigate();
-
-  
-
   const onSubmit = (data) =>{    
     updateMeme(id, data)
     navigate("/") 
   }
-
-  // useEffect(() => {
-  //   const fetchMeme = async () => {
-  //     try {
-  //       const data = await getOneMeme(id);
-  //       setMemeData(data);
-  //       setLoading(false); // Deja de mostrar el cargando
-  //       console.log("Este es el data actualizado"+memeData)
-  //     } catch (error) {
-  //       console.error("Error al actualizar el meme", error);
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   fetchMeme();
-  // }, [memeData]);
-
-  
-
-//   const handleDelete = async () => {
-//     try {
-//       await deleteMeme(id);
-//       navigate("/"); //redirige a home
-//     } catch (error) {
-//       console.error("Error al eliminar el meme:", error);
-//     }
-//   };
 
   return (
     <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 bg-primary">
@@ -99,9 +61,7 @@ const EditMeme = () => {
             <label name='url'type="tags" className="block text-sm font-medium leading-6 text-white">URL</label>
             <div className="mt-2">
               <label className="block text-sm font-medium leading-6 text-white">{memeData.url}
-              {/* {...register('url')} */}
               </label>
-
             </div>
           </div>
 
@@ -111,10 +71,8 @@ const EditMeme = () => {
               <select 
               type="text" 
               className="block w-full rounded-md py-1.5 text-black bg-primarylight ring-1 ring-secondary"
-              
               {...register('category',{required:true})}
               >
-                {/* <option value=""> Seleccione una categoria </option> */}
                 <option value="trabajo">Trabajo</option>
                 <option value="programacion">Programación</option>
                 <option value="estudiante">Estudiante</option>
@@ -127,11 +85,9 @@ const EditMeme = () => {
             <div className="mt-2">
               <input 
               type="text" 
-              className="block w-full rounded-md py-1.5 text-black bg-primarylight ring-1 ring-secondary" 
-             
+              className="block w-full rounded-md py-1.5 text-black bg-primarylight ring-1 ring-secondary"             
               {...register('tags',{required:true})}
                ></input>
-
             </div>
           </div>
 

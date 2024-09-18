@@ -13,7 +13,10 @@ export default {
       },
       fontFamily:{
         mainFont:['Delius', 'sans-serif']
-      }
+      },
+      screens: {
+        'xs': '412px', // Definimos un breakpoint para pantallas de 412px
+      },
     },
   },
   plugins: [
