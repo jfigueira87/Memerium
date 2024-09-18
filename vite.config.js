@@ -6,5 +6,6 @@ export default defineConfig({
  test: {
  globals: true,
  environment: 'jsdom',
+ setupFiles: ['./setupTests.js'], //agrego esta linea porque no tengo acceso a las APIs del navegador, JSDOM puede que no lo tenga disponible 
  }
 })
