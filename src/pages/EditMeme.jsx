@@ -3,6 +3,7 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import { getOneMeme, updateMeme } from "../services/services";
 import { useForm } from "react-hook-form";
 import { useLoaderData } from "react-router-dom";
+ 
 
 const EditMeme = () => {
   const { id } = useParams(); 
@@ -92,7 +93,7 @@ const EditMeme = () => {
           </div>
 
           <div>
-            <input type="submit" value="Guardar información" className="flex w-full justify-center rounded-md bg-gray-300 px-3 py-1.5 text-sm font-semibold leading-6 text-primary shadow-sm" />
+          <Link to={`/detailmeme/${id_meme}`}><input type="submit" value="Guardar información" className="flex w-full justify-center rounded-md bg-gray-300 px-3 py-1.5 text-sm font-semibold leading-6 text-primary shadow-sm" /></Link>
           </div>
 
         </form>
