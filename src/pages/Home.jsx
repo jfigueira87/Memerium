@@ -54,7 +54,7 @@ const Home = () => {
       </div>
 
       {/* Carrusel */}
-      <div className="relative overflow-hidden bg-gradient-to-b from-[#003340] via-[#D9D9D9] to-[#003340]">
+      <div className="relative overflow-hidden bg-gradient-to-b from-secundary via-primary to-secundary">
         {/* Wrapper del Carrusel */}
         <div
           className="relative flex transition-transform duration-700 ease-in-out my-20 justify-center"
