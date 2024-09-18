@@ -66,12 +66,9 @@ const MemeDetail = () => {
       {/* Información del meme */}
       <div className="w-full max-w-lg text-white font-mainFont space-y-4 text-center md:text-left">
         <h2 className="text-xl md:text-2xl font-semibold">Título: {memeData.name}</h2>
-
-        {/* URL ajustada */}
-        <p className="text-lg break-words truncate">
+        <p className="text-lg break-words">
           URL: <a href={memeData.url} className="underline break-all">{memeData.url}</a>
         </p>
-
         <p className="text-lg">Categoría: {memeData.category}</p>
         <p className="text-lg">
           Palabras claves: {Array.isArray(memeData.tags) ? memeData.tags.join(', ') : memeData.tags}
