@@ -15,9 +15,9 @@
       "id": "a939"
     },
     {
-      "name": "Quienes somos y lo que queremos23",
-      "category": "estudiante",
-      "tags": "vacaciones",
+      "name": "Quienes somos y lo que queremos",
+      "category": "programacion",
+      "tags": "vacaciones 2",
       "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877467/vacaciones_hcqe2i.jpg",
       "id": "c0a3"
     },
@@ -127,13 +127,6 @@
       "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726649555/5_minutos_s7q8lx.jpg"
     },
     {
-      "id": "730d",
-      "name": "¿Y si falto mañana?",
-      "category": "trabajo",
-      "tags": "batman indispensable",
-      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726649685/indispensable_hg5rl1.png"
-    },
-    {
       "id": "a124",
       "name": "Ganas de trabajar",
       "category": "trabajo",
@@ -146,13 +139,6 @@
       "category": "trabajo",
       "tags": "flojera rana",
       "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726649907/rana_tqyjc2.jpg"
-    },
-    {
-      "id": "460b",
-      "name": "¿Por qué lloras?",
-      "category": "trabajo",
-      "tags": "llorar sábado",
-      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726649988/sabado_zlo4py.jpg"
     },
     {
       "id": "0e52",
@@ -223,6 +209,20 @@
       "category": "programacion",
       "tags": "bugs enojo corregir ",
       "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726651025/bugs_ymnkjx.jpg"
+    },
+    {
+      "id": "0f6e",
+      "name": "Prueba",
+      "category": "trabajo",
+      "tags": "prueba",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726730193/meme_Javascript_o5yjse.jpg"
+    },
+    {
+      "id": "7e86",
+      "name": "Prueba",
+      "category": "trabajo",
+      "tags": "prueba",
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726732976/meme_Javascript_uqbqzi.jpg"
     }
   ]
 }
