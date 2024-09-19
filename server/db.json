@@ -1,11 +1,11 @@
 {
   "memes": [
     {
-      "id": "4f3e",
-      "name": "Home Office",
+      "name": "Home Office 2",
       "category": "trabajo",
       "tags": "Spider man",
-      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877207/SPIDER_zinq2v.jpg"
+      "url": "https://res.cloudinary.com/dz53okn10/image/upload/v1725877207/SPIDER_zinq2v.jpg",
+      "id": "4f3e"
     },
     {
       "name": "Madrugon universitario ",
@@ -148,11 +148,11 @@
       "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650221/1de_wyae9h.webp"
     },
     {
-      "id": "2a85",
-      "name": "Si existe el dia del trabajador...",
+      "name": "Si existe el dia del trabajador.",
       "category": "trabajo",
       "tags": "flojera dino",
-      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650324/dia-del-trabajo-meme6.jpg_hsrkbc.webp"
+      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650324/dia-del-trabajo-meme6.jpg_hsrkbc.webp",
+      "id": "2a85"
     },
     {
       "name": "Si el trabajo es salud...",
@@ -188,20 +188,6 @@
       "category": "programacion",
       "tags": "compilar",
       "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650900/cppila_nma4vs.jpg"
-    },
-    {
-      "id": "672f",
-      "name": "No hace nada",
-      "category": "programacion",
-      "tags": "compilar ",
-      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726650959/aa_zcb9by.jpg"
-    },
-    {
-      "id": "d68c",
-      "name": "¡Por fin!",
-      "category": "programacion",
-      "tags": "bugs enojo corregir ",
-      "url": "http://res.cloudinary.com/dz53okn10/image/upload/v1726651025/bugs_ymnkjx.jpg"
     },
     {
       "id": "0f6e",

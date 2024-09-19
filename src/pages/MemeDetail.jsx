@@ -26,11 +26,14 @@ const MemeDetail = () => {
   }, [id]);
 
   const handleDelete = async () => {
-    try {
-      await deleteMeme(id);
-      navigate('/');
-    } catch (error) {
-      console.error('Error al eliminar el meme:', error);
+    const confirmed = window.confirm('¿Estás seguro de que deseas eliminar este meme?');
+    if (confirmed) {
+      try {
+        await deleteMeme(id);
+        navigate(-1);
+      } catch (error) {
+        console.error('Error al eliminar el meme:', error);
+      }
     }
   };
 
@@ -92,5 +95,6 @@ const MemeDetail = () => {
 };
 
 export default MemeDetail;
+
 
 
