@@ -67,10 +67,10 @@ const Home = () => {
         </h2>
       </div>
       <div id="aboutUs"></div>
-      <div className="m-14 text-center" id="aboutUs">
-        <h2 className="text-3xl font-bold mb-5">Sobre nosotros</h2>
-        <p>Memerium: Donde los Memes se Convierten en Arte</p>
-        <p>Bienvenidos a Memerium, el primer museo digital dedicado exclusivamente al arte del meme. En un mundo donde el humor viral y la creatividad espontánea definen nuestra cultura, hemos creado un espacio donde los memes son más que simples imágenes: son obras de arte que cuentan historias, reflejan emociones y conectan a personas de todo el mundo.</p>
+      <div className="m-14 text-center lg:text-2xl text-1xl lg:px-40 px-2" id="aboutUs">
+        <h2 className="text-4xl font-bold mb-5">Sobre nosotros</h2>
+        <p className="font-bold">Memerium: Donde los Memes se Convierten en Arte</p><br/>
+        <p>Bienvenidos a Memerium, el primer museo digital dedicado exclusivamente al arte del meme. En un mundo donde el humor viral y la creatividad espontánea definen nuestra cultura, hemos creado un espacio donde los memes son más que simples imágenes: son obras de arte que cuentan historias, reflejan emociones y conectan a personas de todo el mundo.</p><br/>
         <p>Los memes son una forma de arte moderna, una herramienta que rompe barreras de idioma y cultura. En Memerium, creemos que el humor puede unir a las personas, y los memes son una manera poderosa de hacerlo. Desde memes clásicos que nunca pasan de moda hasta los más recientes que inundan internet, nuestra misión es celebrar esta nueva forma de comunicación que, en cuestión de segundos, puede hacer reír a millones.</p>
 
       </div>
@@ -203,5 +203,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
