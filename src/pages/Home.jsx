@@ -104,7 +104,7 @@ const Home = () => {
 
         </div>
         <div className="text-center text-black font-mainFont flex justify-center w-full pb-8 mb-10">
-          <Link to={`/newmeme`}> <button type="button" className="rounded-md bg-gray-300 px-10 py-4 text-sm font-bold  text-primary shadow-sm">Agrega un meme</button></Link>
+          <Link to={`/newmeme`}> <button type="button" className="rounded-md bg-gray-300 px-10 py-4 text-sm font-bold  text-primary shadow-sm hover:bg-gray-400">Agrega un meme</button></Link>
         </div>
 
         {/* Indicadores del Carrusel */}
@@ -203,7 +203,6 @@ const Home = () => {
 };
 
 export default Home;
-
 
 
 
